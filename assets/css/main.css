@@ -40,7 +40,7 @@ footer, header, hgroup, menu, nav, section {
 		border-radius: 50%; /* to make it circular */
 		object-fit: cover; /* to maintain aspect ratio */
 		margin: 20px auto;
-		border-bottom: none;
+		border: none;
 	}
 
 body {
