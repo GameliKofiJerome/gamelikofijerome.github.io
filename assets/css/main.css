@@ -34,8 +34,11 @@ footer, header, hgroup, menu, nav, section {
 		text-align: center;
 	}
 	
-.circle-image {
-		border-radius: 50%;
+.profile-pic {
+		width: 150px; /* adjust the size as needed */
+		height: 150px; /* adjust the size as needed */
+		border-radius: 50%; /* to make it circular */
+		object-fit: cover; /* to maintain aspect ratio */
 	}
 
 body {
