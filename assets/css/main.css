@@ -38,7 +38,7 @@ footer, header, hgroup, menu, nav, section {
 .profile-pic {
 		width: 180px; /* adjust the size as needed */
 		height: 180px; /* adjust the size as needed */
-		border-radius: 50%; /* to make it circular */
+		border-radius: 60%; /* to make it circular */
 		object-fit: cover; /* to maintain aspect ratio */
 		margin: 20px auto;
 	}
