@@ -35,12 +35,12 @@ footer, header, hgroup, menu, nav, section {
 	}
 	
 .profile-pic {
+	margin-top: 0;
 		width: 180px; /* adjust the size as needed */
 		height: 180px; /* adjust the size as needed */
 		border-radius: 50%; /* to make it circular */
 		object-fit: cover; /* to maintain aspect ratio */
 		margin: 20px auto;
-		border: none;
 	}
 
 body {
