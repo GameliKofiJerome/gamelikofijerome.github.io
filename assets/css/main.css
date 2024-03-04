@@ -35,7 +35,7 @@ footer, header, hgroup, menu, nav, section {
 	}
 	
 .profile-pic {
-		margin-top: 2px;
+		margin: 0;
 		width: 180px; /* adjust the size as needed */
 		height: 180px; /* adjust the size as needed */
 		border-radius: 50%; /* to make it circular */
