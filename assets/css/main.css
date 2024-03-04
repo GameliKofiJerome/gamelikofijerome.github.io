@@ -32,10 +32,14 @@ footer, header, hgroup, menu, nav, section {
 
 .img_container {
 		text-align: center;
+		border: none;
 	}
 	
 .profile-pic {
-		margin-top: 0;
+<<<<<<< HEAD
+=======
+		
+>>>>>>> daed2a4dfb0ef3dede0d935bf4b4605204837904
 		width: 180px; /* adjust the size as needed */
 		height: 180px; /* adjust the size as needed */
 		border-radius: 50%; /* to make it circular */
