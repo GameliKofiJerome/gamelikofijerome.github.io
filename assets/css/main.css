@@ -39,7 +39,7 @@ footer, header, hgroup, menu, nav, section {
 		width: 200px; /* adjust the size as needed */
 		height: 200px; /* adjust the size as needed */
 		border-radius: 60%; /* to make it circular */
-		border: 3px solid white;
+		border: 5px solid white;
 		object-fit: cover; /* to maintain aspect ratio */
 		margin: 20px auto;
 	}
