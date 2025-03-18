@@ -1,0 +1,468 @@
+// Dynanic Rendering of View Project Details Page
+document.addEventListener("DOMContentLoaded", function() {
+    const params = new URLSearchParams(window.location.search);
+    const projectId = params.get("id");
+    const projects = {
+        "Hospitality Domain Revenue Insights": {
+            title: "Hospitality Domain Revenue Insights",
+
+            frameSrc: "https://app.powerbi.com/reportEmbed?reportId=ac230e5b-df24-445e-a87c-515f408d1048&autoAuth=true&ctid=afab14ca-ab60-42a6-8a29-ff101424f318&navContentPaneEnabled=false&filterPaneEnabled=false",
+
+            about: `<p>In today’s competitive hospitality industry, data-driven decision-making is essential for maintaining market leadership and maximizing revenue.<br>
+                        This project focuses on a Revenue Insights Dashboard developed in Power BI for Atliq Grands, a luxury hotel chain facing market share and revenue decline.<br>
+                        By analyzing historical data, the dashboard provides key performance indicators (KPIs) such as occupancy rates, average daily rates (ADR), revenue per available room (RevPAR), and competitor benchmarking.<br>
+                        These insights empower the management team to:
+                        <ul>
+                            <li>Identify revenue trends and customer booking patterns</li>
+                            <li>Understand competitive positioning in the luxury/business hotel segment</li>
+                            <li>Optimize pricing strategies to improve profitability</li>
+                            <li>Enhance operational efficiency through data-driven forecasting</li>
+                        </ul>
+                        This project showcases how business intelligence and data analytics play a pivotal role in strategic decision-making, enabling hospitality brands to regain market share and sustain revenue growth.
+                    </p>`,
+
+            solution: `<p>A comprehensive data analysis was conducted to evaluate key performance metrics such as Revenue Per Available Room (RevPAR), Occupancy Percentage (OCC%), Total Revenue, Average Daily Rate (ADR), and Realization Rate. 
+                          A structured dashboard design was implemented using Power BI, incorporating filters and interactive elements to facilitate intuitive exploration. 
+                          Additional insights beyond the predefined metrics were generated to uncover hidden trends and optimize decision-making.
+                      </p>`,
+
+            dataProcess: `
+                          <h3>Data Sources</h3>
+                          <p>Historical hotel performance data, including booking records, occupancy rates, and financial metrics.</p>
+
+                          <h3>Development Process</h3>
+                          
+                          <p><strong>1. Data Preparation:</strong> Cleaning, transforming, and validating historical data for accuracy.</p>
+
+                          <p><strong>2. Metric Calculation:</strong> Computing KPIs such as <strong>RevPAR</strong>, <strong>ADR</strong>, <strong>Realization</strong>, <strong>DSRN</strong> and <strong>OCC%</strong> to assess hotel performance.</p>
+
+                          <p><strong>3. Dashboard Implementation:</strong> Designing a user-friendly, interactive <strong>Power BI</strong> dashboard with filters and navigation for seamless exploration.</p>
+
+                          <p><strong>4. Insights Generation:</strong> Identifying revenue trends, occupancy patterns, and areas for optimization to support data-driven decision-making.</p>`,
+
+            insights: `<p>Based on the historical data analysis, the revenue management dashboard provided the following key insights:</p>
+                      <ul>
+                      <li><b>Booking Platform Performance:</b> Logtrip had the highest <b>Realization % (70.59%)</b>, while Tripster had the lowest <b>(69.83%)</b>, indicating a marginal but notable difference in conversion efficiency across platforms.</li><br>
+                      <li><b>ADR vs. Realization % Discrepancy:</b> The largest divergence between <b>Average Daily Rate (ADR) and Realization %</b> was observed in <b>Direct Offline bookings</b>, where ADR peaked at <b>$1,279,046 — 50% higher than the Realization %</b>, highlighting a potential gap in revenue optimization for direct offline channels.</li><br>
+                      <li><b>Platform-Wide Revenue Insights:</b> Across all <b>seven booking platforms, Realization % ranged from 69.83% to 70.59%</b>, while <b>ADR fluctuated between 12,633.71 and 12,791.17</b>, underscoring the need for platform-specific pricing and revenue strategies.</li><br>
+                      <li><b>Luxury vs. Business Segment Revenue:</b> The <b>Luxury segment generated $1,052,751,932 in revenue</b>, significantly outperforming the <b>Business segment ($656,019,297)</b>, accounting for <b>61.61% of total revenue</b>, indicating a strong market preference for premium offerings.</li><br>
+                      <li><b>Strategic Revenue Growth Opportunity:</b> Given the luxury segment’s dominance, <b>enhancing premium offerings, optimizing high-value bookings, and refining pricing strategies</b> could further solidify Atliq Grands’ market position and drive revenue growth.</li>
+                      </ul>
+                      <p>These insights provide <b>actionable recommendations</b> for revenue optimization, strategic pricing, and platform-specific improvements, enabling Atliq Grands to regain market share in the luxury/business hotel sector.</p>
+                      `,
+
+            recommendations: `<p>Based on the insights from the historical data, the following actions are recommended: </p>
+                                  <h3>1. Optimize Platform-Specific Pricing Strategies</h3>
+                                  <ul>
+                                      <li><strong>Adjust Pricing Models:</strong> Since realization percentages vary across booking platforms (Logtrip: 70.59%, Tripster: 69.83%), Atliq Grands should analyze commission structures, customer acquisition costs, and pricing elasticity per platform.</li>
+                                      <li><strong>Incentivize High-Performing Platforms:</strong> Offer exclusive discounts or loyalty incentives for customers booking through platforms with a higher realization rate (e.g., Logtrip) to increase direct revenue share.</li>
+                                      <li><strong>Performance-Based Commission Adjustments:</strong> Renegotiate commission rates with lower-performing platforms (Tripster) to improve margin efficiency and boost conversion rates.</li>
+                                  </ul>
+                                
+                                <h3>2. Address Revenue Gaps in Direct Offline Bookings</h3>
+                                <ul>
+                                    <li><strong>Enhance Direct Booking Incentives:</strong> With a significant ADR ($1,279,046) but a lower realization percentage, Atliq Grands should provide special offers, exclusive perks, and bundled deals to encourage direct offline bookings.</li>
+                                    <li><strong>Invest in Personalized Customer Outreach:</strong> Implement data-driven retargeting and loyalty programs to drive repeat direct bookings and increase conversion rates.</li>
+                                    <li><strong>Streamline Offline Sales Processes:</strong> Optimize sales training and CRM strategies to ensure sales teams convert high-ADR offline leads more effectively.</li>
+                                </ul>
+                                
+                                <h3>3. Leverage Data for Platform-Wide Revenue Growth</h3>
+                                <ul>
+                                    <li><strong>Dynamic Pricing Implementation:</strong> Utilize machine learning-based pricing models to adjust ADR dynamically based on platform demand fluctuations (ranging from $12,633.71 to $12,791.17).</li>
+                                    <li><strong>Realization Rate-Based Discounts:</strong> Offer time-sensitive promotions to improve realization percentages on platforms with lower conversion efficiency.</li>
+                                    <li><strong>Optimize Booking Experience:</strong> Improve UI/UX on third-party platforms by collaborating with vendors to reduce drop-offs and cart abandonments.</li>
+                                </ul>
+                                
+                                <h3>4. Strengthen High-Value Luxury Offerings</h3>
+                                <ul>
+                                    <li><strong>Enhance Luxury Guest Experience:</strong> Given that 61.61% of total revenue comes from the luxury segment, Atliq Grands should elevate premium guest experiences through exclusive services like personalized concierge, high-end amenities, and luxury partnerships.</li>
+                                    <li><strong>Segment-Specific Marketing:</strong> Implement targeted digital campaigns emphasizing exclusivity and VIP experiences to attract high-net-worth individuals.</li>
+                                    <li><strong>Expand Premium Room Categories:</strong> Introduce new ultra-luxury room tiers or experiential packages that cater to affluent travelers.</li>
+                                </ul>
+                                
+                                <h3>5. Implement Data-Driven Revenue Growth Strategies</h3>
+                                <ul>
+                                    <li><strong>Revenue Performance Analytics:</strong> Continuously monitor realization percentages and ADR trends per platform using advanced analytics dashboards.</li>
+                                    <li><strong>Customer Segmentation Strategy:</strong> Develop predictive models to identify high-value customers and tailor pricing and promotions accordingly.</li>
+                                    <li><strong>Competitive Benchmarking:</strong> Conduct regular market research to adjust pricing and services in line with competitors’ luxury offerings.</li>
+                                </ul>`
+        },
+
+        "Supplier Quality and Performance Analysis": {
+            title: "Supplier Quality and Performance Analysis",
+
+            frameSrc: "https://app.powerbi.com/reportEmbed?reportId=98c94ff7-2c6c-401c-bb02-069cb6286ba5&autoAuth=true&ctid=afab14ca-ab60-42a6-8a29-ff101424f318&navContentPaneEnabled=false&filterPaneEnabled=false",
+
+            about: `<p>
+                      Innova Manufacturing Ltd, a leading manufacturer, faced significant challenges in managing supplier quality and performance due to a lack of a centralized procurement system. 
+                      Without a structured approach to assessing supplier reliability, the company struggled with inconsistent vendor performance, defective materials, and production downtime. 
+                      Recognizing the need for a data-driven solution, the program management team consolidated supplier and defect-related data across multiple plants. 
+                      The objective of this project was to analyze supplier quality, identify the key contributors to material defects and downtime, 
+                      and provide actionable insights to optimize supply chain decisions and improve overall manufacturing efficiency.
+                    </p>`,
+
+            solution: `
+                      <p>To address Innova's challenges, a structured data analysis approach was adopted, leveraging Power BI for data visualization and business intelligence reporting. 
+                        The solution was implemented in the following phases:</p>
+                        <h3>1. Data Cleaning & Integration</h3>
+                          <ul>
+                              <li>Collected data from multiple plants, consolidating information on materials, vendors, defects, and downtime.</li>
+                              <li>Ensured data accuracy and consistency by standardizing vendor and material records.</li>
+                          </ul>
+
+                          <h3>2. Exploratory Data Analysis (EDA)</h3>
+                          <ul>
+                              <li>Analyzed defect rates and downtime associated with each vendor and plant.</li>
+                              <li>Investigated material performance across different suppliers to identify recurring quality issues.</li>
+                          </ul>
+
+                          <h3>3. Key Performance Indicator (KPI) Development</h3>
+                          <ul>
+                              <li>Established KPIs such as defect count per vendor, downtime minutes per plant, and material failure rates.</li>
+                              <li>Identified underperforming vendors and materials that contributed most to defects and downtime.</li>
+                          </ul>
+
+                          <h3>4. Data Visualization & Dashboard Development</h3>
+                          <ul>
+                              <li>Designed interactive Power BI dashboards to present supplier performance insights.</li>
+                              <li>Provided drill-down capabilities for stakeholders to analyze vendor performance across plants.</li>
+                          </ul>
+
+                          <h3>5. Insight Generation</h3>
+                          <ul>
+                              <li>Identified vendors and plants causing the greatest defect quantity and downtime.</li>
+                              <li>Highlighted specific vendor-material combinations leading to poor performance.</li>
+                          </ul>`,
+
+            dataProcess: `
+                          <h3>Data Sources</h3>
+                            <ul>
+                                <li><strong>Historical Supplier Data:</strong> Records of vendors supplying raw materials, including material types and associated costs.</li>
+                                <li><strong>Defect Reports:</strong> Number and type of material defects reported across different manufacturing plants.</li>
+                                <li><strong>Downtime Logs:</strong> Data capturing minutes of production downtime caused by defective materials.</li>
+                                <li><strong>Procurement Records:</strong> Information on vendor transactions, order quantities, and material deliveries.</li>
+                            </ul>
+
+                            <h3>Development Process</h3>
+                            <ol>
+                                <li><strong>Data Collection & Transformation:</strong> Gathered, cleaned, and structured supplier, defect, and downtime data for analysis.</li>
+                                <li><strong>Analytical Model Building:</strong> Leveraged Power BI Business Intelligence tool to develop calculations to assess defect rates, downtime impact, and supplier consistency.</li>
+                                <li><strong>Visualization & Reporting:</strong> Created dynamic Power BI dashboards for assessing supplier performance.</li>
+                            </ol> `,
+
+            insights: `
+                      <p>This report presents key insights from the analysis of supplier quality and performance for Innova Manufacturing Ltd. 
+                      The objective is to identify trends in defect quantities, downtime hours, and supplier, plant, and material performance to optimize the company's supply chain and manufacturing processes. 
+                      The analysis covers data from 2018 and 2019, highlighting key weaknesses, opportunities, and areas of concern.</p>
+
+                       <h3>Key Findings</h3>
+
+                        <h3>1. Defect Trends</h3>
+                        <ul>
+                            <li>Total Defect Quantity increased by 23.32% from 2018 (1,163,615,190) to 2019 (1,435,019,274).</li>
+                            <li>October 2019 accounted for 8.64% of total defects, indicating a seasonal pattern or process inefficiency.</li>
+                            <li>Raw Materials had the highest defect rate (770,580,317), representing 29.65% of all defects, while Printed Materials had the lowest (223,112).</li>
+                        </ul>
+
+                        <h3>2. Downtime Impact</h3>
+                        <ul>
+                            <li>Total Downtime Hours increased by 23.44% from 2018 (96,580.68) to 2019 (119,229.23).</li>
+                            <li>October 2019 had the highest share of downtime (8.93%).</li>
+                            <li>Raw Materials caused the highest downtime (65,918.17 hours), making up 30.54% of all downtime.</li>
+                            <li>October had the highest downtime cost per hour ($292,034.33), which was 190.93% higher than the lowest month (July, $100,378.50).</li>
+                        </ul>
+
+                        <h3>3. Vendor Performance</h3>
+                        <ul>
+                            <li><strong>Defect Quantity:</strong></li>
+                            <ul>
+                                <li>Top contributor: Yombu (15,136,374 defects, 14.53% higher than Edgeblab).</li>
+                                <li>Lowest contributor: Edgeblab (13,215,947 defects).</li>
+                                <li>Among bottom 10 vendors, Mymm had the highest defects (3,917,630), 17.43% higher than Dablist (3,336,056).</li>
+                            </ul>
+                            <li><strong>Downtime Impact:</strong></li>
+                            <ul>
+                                <li>Avamm had the highest downtime (1,164.82 hours), 9.42% higher than Reallinks (1,064.55 hours).</li>
+                                <li>Among bottom 10 vendors, Jatri had the highest downtime (309.02 hours), 28.87% higher than Tagfeed (239.78 hours).</li>
+                            </ul>
+                        </ul>
+
+                        <h3>4. Plant Performance</h3>
+                        <ul>
+                            <li><strong>Defect Quantity:</strong></li>
+                            <ul>
+                                <li>Hingham had the highest defects (100,174,656), 12.97% higher than Ripton (88,672,748).</li>
+                                <li>Among the bottom 10 plants, June Lake had the highest defects (83,170,353), 23.96% higher than Middletown (67,096,796).</li>
+                            </ul>
+                            <li><strong>Downtime Hours:</strong></li>
+                            <ul>
+                                <li>Riverside had the highest downtime (8,597.85 hours), 16.31% higher than Barling (7,392.45 hours).</li>
+                                <li>Among the bottom 10 plants, Savannah had the highest downtime (6,975.17 hours), 15.39% higher than Reading (6,044.72 hours).</li>
+                            </ul>
+                        </ul>
+
+                      <h3>SWOT Analysis</h3>
+                      <h3>1. Strengths</h3>
+                      <ul>
+                        <li>Centralized data collection from multiple plants enables company-wide performance tracking.</li>
+                        <li>Identification of key vendors and plants contributing to defects and downtime.</li>
+                        <li>Visibility into cost-impacting downtime trends.</li>
+                      </ul>
+
+                      <h3>2. Weaknesses</h3>
+                      <ul>
+                        <li>Lack of a standardized procurement system leads to inconsistent supplier performance monitoring.</li>
+                        <li>High defect rates from specific vendors and materials impacting production efficiency.</li>
+                        <li>Significant increase in downtime from 2018 to 2019.</li>
+                      </ul>
+
+                      <h3>3. Opportunities</h3>
+                      <ul>
+                        <li>Implementing a vendor quality scoring system to standardize supplier evaluation.</li>
+                        <li>Refining material selection based on defect trends.</li>
+                        <li>Process optimization to reduce seasonal defect spikes.</li>
+                      </ul>
+                
+                      <h3>4. Threats</h3>
+                      <ul>
+                        <li>Continued defects and downtime may impact production costs and delivery timelines.</li>
+                        <li>Vendor inconsistency leading to supply chain inefficiencies.</li>
+                        <li>Lack of immediate corrective action could result in financial and reputational risks.</li>
+                      </ul>
+                   `,
+
+            recommendations: `
+                      <p>The following are industry-specific, actionable recommendations tailored to optimize Innova Manufacturing Ltd's supply chain and manufacturing processes based on the key insights and SWOT analysis.</p>
+                      <h3>1. Supplier Performance Optimization</h3>
+                      <ul>
+                          <li>Implement a <strong>Vendor Quality Scoring System</strong> to assess supplier performance, categorize vendors, and enforce improvement plans.</li>
+                          <li>Prioritize sourcing from low-defect vendors and introduce <strong>predictive analytics</strong> to assess material failure risks.</li>
+                      </ul>
+                      
+                      <h3>2. Downtime Reduction Strategies</h3>
+                      <ul>
+                          <li>Conduct <strong>root cause analysis</strong> on peak downtime periods, implement preventive maintenance, and establish a contingency inventory strategy.</li>
+                          <li>Enforce supplier accountability by linking <strong>downtime penalties</strong> to contracts and securing backup suppliers.</li>
+                      </ul>
+                      
+                      <h3>3. Manufacturing Process Improvement</h3>
+                      <ul>
+                          <li>Adopt <strong>lean manufacturing</strong> to streamline operations, standardize procedures, and train operators on defect prevention.</li>
+                          <li>Implement <strong>predictive maintenance</strong> schedules and plans at high-downtime plants to anticipate failures and reduce disruptions.</li>
+                      </ul>
+                      
+                      <h3>4. Supply Chain Standardization & Risk Mitigation</h3>
+                      <ul>
+                          <li>Develop a <strong>centralized procurement system</strong> for supplier evaluations and real-time monitoring.</li>
+                          <li>Reduce reliance on high-defect suppliers and adopt <strong>dual-sourcing strategies</strong> to ensure supply chain stability.</li>
+                      </ul>
+                      
+                      <h3>5. Continuous Improvement & Performance Monitoring</h3>
+                      <ul>
+                          <li>Deploy <strong>real-time data analysis</strong> and visualization dashboards for monitoring defects, supplier performance, and downtime.</li>
+                          <li>Conduct <strong>quarterly performance reviews</strong> with suppliers and plant managers to drive ongoing improvements.</li>
+                      </ul>
+                      
+                      <p><strong>By adopting these strategies, Innova Manufacturing Ltd can enhance supplier quality, minimize downtime, and optimize manufacturing efficiency.</strong></p>
+            `
+        },
+
+    "Product Sales and Performance Analysis": {
+            title: "Product Sales and Performance Analysis",
+
+            frameSrc: "https://app.powerbi.com/reportEmbed?reportId=a9149746-55ad-4e3a-b7e1-35c32c566d18&autoAuth=true&ctid=afab14ca-ab60-42a6-8a29-ff101424f318&navContentPaneEnabled=false&filterPaneEnabled=false",
+
+            about: `<p>
+                      The Product Sales and Performance Analysis project aimed to provide actionable insights into sales trends, revenue performance, 
+                      and sales effectiveness within the product marketing and sales industry. By leveraging Power BI dashboards, the analysis evaluated total revenue, budget alignment, product group performance, 
+                      sales channels, and salesperson rankings, offering data-driven recommendations to optimize business strategies.
+                      This project underscores the power of data-driven insights in shaping marketing and sales strategies, 
+                      helping businesses maximize revenue potential and enhance overall performance.
+                    </p>
+                    <h3>Project Objectives:</h3>
+                    <ol>
+                      <li>Identify <strong>revenue growth trends</strong> and key budget fluctuations to improve financial planning.</li>
+                      <li>Highlight <strong>top-performing products</strong> and underperforming categories to refine product strategy.</li>
+                      <li>Analyze <strong>sales channels</strong> to pinpoint revenue-driving opportunities, with a focus on e-commerce expansion.</li>
+                      <li>Rank <strong>salesperson performance</strong>, revealing best practices to enhance sales effectiveness.</li>
+                      <li>Provide <strong>strategic recommendations</strong> to drive profitability, optimize sales operations, and align decision-making with business goals.</li>
+                    </ol>
+                    `,
+
+            solution: `
+                      <p>
+                        The Product Sales and Performance Analysis Report was developed using Power BI, leveraging filters and page navigation for an intuitive and user-friendly design. 
+                        The process began with data extraction, cleaning, and structuring to ensure accuracy. 
+                        A Sales Dashboard was created to analyze revenue trends, budget alignment, product performance, and sales channel contributions, 
+                        while a Performance Dashboard ranked salespersons based on revenue and order volume. 
+                        Key insights were derived to optimize sales strategies, refine budgeting, and enhance channel effectiveness, providing actionable recommendations for business growth.
+                      </p>
+                      `,
+
+            dataProcess: `
+                          <p>The analysis was conducted using aggregated sales transactions data recorded between <strong>January 2019 and January 2021</strong>. The dataset includes:</p>
+                          <ul>
+                              <li>Sales revenue</li>
+                              <li>Order volumes</li>
+                              <li>Budget forecasts</li>
+                              <li>Product categories</li>
+                              <li>Sales channels</li>
+                              <li>Individual salesperson performance</li>
+                          </ul>
+                          <h3>Data Sources</h3>
+                            <p>The primary data sources used for this analysis include:</p>
+                                <ul>
+                                  <li><strong>Enterprise Resource Planning (ERP) System:</strong> Recorded sales transactions, product performance, and order details.</li>
+                                  <li><strong>Customer Relationship Management (CRM) System:</strong> Captured sales interactions and revenue contributions by salespersons.</li>
+                                  <li><strong>Financial Budgeting Reports:</strong> Provided sales budget allocations and variance tracking.</li>
+                                </ul>
+
+                            <h3>Development Process</h3>
+                            <p>The structured data was integrated into <strong>Power BI</strong>, enabling dynamic visualizations and trend analysis. Key focus areas included:</p>
+                              <ul>
+                                  <li>Tracking <strong>revenue growth</strong> and identifying trends.</li>
+                                  <li>Analyzing <strong>budget alignment</strong> by comparing planned vs. actual revenue.</li>
+                                  <li>Assessing <strong>product performance</strong> to highlight top-selling and underperforming categories.</li>
+                                  <li>Evaluating <strong>sales channels</strong> and their contribution to overall revenue.</li>
+                                  <li>Ranking <strong>salesperson performance</strong> based on revenue generation.</li>
+                              </ul> `,
+
+            insights: `
+                      <h3>Executive Summary</h3>
+                      <p>
+                        This report presents key findings from two Power BI dashboards analyzing sales performance from <strong>January 2019 to January 2021</strong>. 
+                        The <strong>Sales Dashboard</strong> focuses on <strong>total revenue, orders, and Average Ticket Price (ATP)</strong> while benchmarking revenue against budget, product groups, sales channels, and product categories. 
+                        The <strong>Performance Dashboard</strong> evaluates sales effectiveness, ranking salespersons by revenue contribution.
+                      </p>
+                      <h3>1. Revenue and Budget Trends</h3>
+                        <ul>
+                            <li><strong>Unexpected Low Budget:</strong> January 2019's sales budget was only $264,763.33, well below the expected range of $319,835.31 – $1,431,150.76.</li>
+                            <li><strong>Consistent Budget Growth:</strong> Over five quarters, the budget increased by 31.09% ($587,352.68), with the steepest rise occurring between July 2019 and October 2020 (+$587,352.67).</li>
+                            <li><strong>Sustained Revenue Growth:</strong> Revenue steadily increased over two years, with its longest period of growth spanning from January 2019 to January 2021 (+$609,867.26).</li>
+                        </ul>
+                      <h3>2. Revenue Distribution by Product Group</h3>
+                        <ul>
+                            <li><strong>Top Performer:</strong> Wheat Flour generated the highest revenue at $4,473,241, followed by Oil ($2,890,488) and Yeasts ($2,201,022).</li>
+                            <li><strong>Lowest Performer:</strong> Tomato Sauce recorded the least revenue, bringing in only $1,933 over the two-year period.</li>
+                        </ul>
+                      <h3>3. Sales Performance by Channel</h3>
+                        <ul>
+                            <li><strong>Retail Channel Leads:</strong> Retail contributed the most revenue, generating $8,697,067 (48.56%).</li>
+                            <li><strong>Distributor Channel:</strong> Accounted for $6,098,516 (34.05%) of total revenue.</li>
+                            <li><strong>Online Sales Lagging:</strong> The Online channel contributed only $3,113,650 (17.39%).</li>
+                        </ul>
+                      <h3>4. Orders by Product Category</h3>
+                        <ul>
+                            <li><strong>Food Category Dominance:</strong> The Food category accounted for 90.21% of total orders (47,414 orders).</li>
+                            <li><strong>Drink Category:</strong> Had significantly fewer orders, making up only 9.79% (5,146 orders).</li>
+                        </ul>
+                      <h3>5. Sales Performance by Salesperson</h3>
+                        <ul>
+                            <li><strong>Top 3 Salespersons:</strong> Carla Ferreira ($4,707,403), Julio Lima ($3,301,482), and Gustavo Gomes ($2,447,136) collectively contributed 58.4% of total revenue.</li>
+                            <li><strong>Leading Salesperson:</strong> Carla Ferreira led sales performance with $4,707,403 in revenue and 9,570 orders.</li>
+                        </ul>
+                   `,
+
+            recommendations: `
+                      <p>The following are actionable recommendations based on product sales and performance analysis to help optimize sales strategies, refine budgeting, 
+                          and enhance channel effectiveness.</p>
+                      <ul>
+                        <li><strong>Enhance Budget Accuracy:</strong> Improve forecasting models to align planned allocations with actual revenue trends, minimizing budget variances.</li>
+                        <li><strong>Maximize Peak Sales Cycles:</strong> Increase marketing and promotional efforts during high-growth periods to capture more revenue.</li>
+                        <li><strong>Optimize Product Portfolio:</strong> Assess demand and profitability of underperforming products (e.g., Tomato Sauce) to determine whether to reposition or discontinue them.</li>
+                        <li><strong>Boost Sales Through Bundling:</strong> Leverage cross-selling strategies by pairing high-revenue products with lower-performing ones to drive sales growth.</li>
+                        <li><strong>Expand Digital Sales Channels:</strong> Strengthen e-commerce and digital marketing efforts to capture shifting consumer purchasing behaviors.</li>
+                        <li><strong>Drive Bulk Sales Consistency:</strong> Implement targeted promotions for distributors to ensure a steady flow of high-volume orders.</li>
+                        <li><strong>Strengthen Beverage Category Sales:</strong> Enhance marketing for drink products through bundled promotions or expanded product offerings.</li>
+                        <li><strong>Scale Top Sales Strategies:</strong> Identify and replicate high-performing sales tactics across the sales team to boost overall performance.</li>
+                        <li><strong>Motivate & Retain Talent:</strong> Introduce performance-based incentives to drive sales engagement and reward top performers.</li>
+                      </ul>
+            `
+        },
+
+      "E-commerce Platform Performance Analysis": {
+            title: "E-commerce Platform Performance Analysis",
+
+            frameSrc: "/assets/documents/Ecommerce_Performance_Analysis_using_SQL_Portfolio.pdf",
+
+            about: `
+                    <p>
+                      Olist, a leading Brazilian e-commerce platform, connects small businesses with larger marketplaces, enabling entrepreneurs to expand their customer reach. 
+                      This project analyzes Olist’s platform performance to uncover key trends in sales, customer behavior, and vendor activity. 
+                      By leveraging data-driven insights, we aim to enhance customer acquisition, retention, and overall profitability.
+                    </p>
+                    `,
+
+            solution: `
+                      <p>
+                        To assess Olist’s e-commerce performance, we analyzed critical Key Performance Indicators (KPIs), including <strong>total revenue, order volume, average order value, customer retention, and seller activity</strong>. 
+                        We conducted a comprehensive breakdown of product sales by <strong>category, payment preferences</strong>, and <strong>geographical distribution</strong>. 
+                        Our analysis also explored factors influencing customer rating and loyalty, profitability, and sales trends over time.
+                      </p>
+                      <h3>Key Performance Indicators (KPIs) Covered:</h3>
+                      <ul>
+                        <li><strong>Total Sales Revenue:</strong> Measure the overall income generated from product sales to assess business growth and market demand.</li>
+                        <li><strong>Number of Orders:</strong> Track the volume of transactions to understand customer purchasing behavior and sales trends.</li>
+                        <li><strong>Average Order Value (AOV):</strong> Calculate the average amount spent per transaction to identify opportunities for upselling and cross-selling.</li>
+                        <li><strong>Product Sales Performance:</strong> Track product sales by order volume and revenue generated for top-performing products for each year, quarter and month.</li>
+                        <li><strong>Active Sellers:</strong> Analyze the number of sellers/vendors who use the platform more than once for the period of the analysis.</li>
+                        <li><strong>Payment Type Usage:</strong> Identify the most used or preferred payment type by customers for transactions.</li>
+                        <li><strong>Profit Margin %:</strong> Measure the profitability of products concerning sales on the platform.</li>
+                        <li><strong>Customer Retention Rate:</strong>Customer Retention Rate: Measure the percentage of repeat customers to understand and improve customer loyalty.</li>
+                      </ul>
+                      `,
+
+            dataProcess: `
+                          <p>
+                            We utilized the <strong>Brazilian E-Commerce Public Dataset by Olist</strong>, which contains over <strong>98,000 orders from 2016 to 2018</strong>. 
+                            The dataset covers various dimensions, such as <strong>order details, payment methods, customer demographics, and product categories</strong>. 
+                            The analysis involved <strong>importing data to create an ER diagram</strong> to visually show the relationship between the various tables, <strong>data cleaning, feature engineering, and visualization</strong> to create a clear picture of platform performance. 
+                            SQL was used for data extraction, transformation and analysis, while Power BI was leveraged for dynamic reporting.</br>
+                            The dataset can be found and downloaded using this link on <a href="https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce" target="_blank">Kaggle</a>.</br>
+                            The SQL queries for the data processing can be found by clicking <a href="https://github.com/GameliKofiJerome/Olist-E-Commerce-Data-Analysis-Using-SQL-Power-BI/blob/main/olist_data_processing.sql" target="_blank">Here</a>.</br>
+                            All SQL queries for undertaking the analysis can be accessed by clicking <a href="https://github.com/GameliKofiJerome/Olist-E-Commerce-Data-Analysis-Using-SQL-Power-BI/blob/main/olist_data_analysis.sql" target="_blank">Here</a>.</br>
+                            The Power BI report can be viewed by clicking on this <a href="https://app.powerbi.com/groups/me/reports/f943c773-3821-4240-8b91-13039244a4f6?ctid=afab14ca-ab60-42a6-8a29-ff101424f318&pbi_source=linkShare" target="_blank">Dashboard Link</a>.
+                          </p>
+                          `,
+
+            insights: `
+                      <p>The following are key insights gathered from the performance analysis of Olist's platform:</p>
+                      <ul>
+                        <li><strong>Revenue Growth:</strong> Olist generated <strong>R$15.4 million</strong> in revenue between 2016 and 2018, with <strong>consistent sales growth</strong> over time.</li>
+                        <li><strong>Top-Selling Categories:</strong> <strong>Bed & Bath, Health & Beauty, and Sports & Leisure</strong> were among the best-performing product categories.</li>
+                        <li><strong>Customer Retention Challenges:</strong> Only <strong>5.67% of total revenue</strong> came from repeat purchases, indicating opportunities for retention improvement.</li>
+                        <li><strong>Payment Preference:</strong> Credit cards were the dominant payment method, used in <strong>73.49%</strong> of transactions.</li>
+                        <li><strong>Geographical Trends:</strong> São Paulo had the highest customer density, but <strong>Acre recorded the highest retention rate (9.88%)</strong>, highlighting potential regional engagement strategies.</li>
+                        <li><strong>Profitability vs. Order Volume:</strong> <strong>Computer Accessories</strong> had the highest profit margin <strong>(30.82%)</strong>, despite not having the most orders</li>
+                      </ul>
+                   `,
+
+            recommendations: `
+                              <p>
+                                The following recommendations provide an actionable roadmap for improving Olist’s platform performance, 
+                                fostering sustainable growth and competitiveness in Brazil’s evolving e-commerce landscape.
+                              </p>
+                              <ul>
+                                <li><strong>Enhance Customer Retention:</strong> Implement <strong>personalized marketing campaigns, loyalty programs, and post-purchase engagement strategies</strong> to boost repeat purchases.</li>
+                                <li><strong>Optimize Product Assortment:</strong> Focus on <strong>high-margin products</strong>, such as computer accessories, while improving visibility and promotions for top-selling categories.</li>
+                                <li><strong>Payment Flexibility:</strong> Expand <strong>installment-based payment options</strong> to cater to a broader customer base and implement discounts to encourage higher-order volumes.</li>
+                                <li><strong>Seller Performance Support:</strong> Provide <strong>sales insights, training, and targeted promotions</strong> to enhance vendor success on the platform.</li>
+                                <li><strong>Localized Marketing:</strong> Invest in <strong>region-specific campaigns</strong>, especially in high-retention areas, to strengthen customer loyalty.</li>
+                              </ul>
+                              `
+        }
+        // Add more projects here
+    };
+    
+    if (projects[projectId]) {
+        document.getElementById("project-title").textContent = projects[projectId].title;
+        document.getElementById("project-frame").src = projects[projectId].frameSrc;
+        document.getElementById("about-project").innerHTML = projects[projectId].about;
+        document.getElementById("solution-approach").innerHTML = projects[projectId].solution;
+        document.getElementById("data-process").innerHTML = projects[projectId].dataProcess;
+        document.getElementById("key-insights").innerHTML = projects[projectId].insights;
+        document.getElementById("recommendations").innerHTML = projects[projectId].recommendations;
+    } else {
+        document.querySelector(".container").innerHTML = "<h1>Project not found</h1><a href='portfolio.html' class='btn'>Back to Portfolio</a>";
+    }
+  });

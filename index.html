@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jerome's Data Analysis Portfolio</title>
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> -->
+  <link rel="stylesheet" href="css/site.css">
+  <script defer src="js/script.js"></script>
+</head>
+<body>
+  <header>
+    <h1><i>Jerome Gameli Kofi Davor</i></h1>
+    <nav id="page-nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+        </ul>
+    </nav>
+  </header>
+
+  <section class="welcome-section">
+    <div class="welcome-text hidden slide-in-left">
+      <h1>Welcome to My Portfolio!</h1>
+      <br>
+        Hi, I am <strong><I>JEROME GAMELI KOFI DAVOR</I></strong>. <br>This portfolio showcases my expertise in data analysis, business intelligence, and data-driven decision-making. 
+        Here, you’ll find a collection of projects demonstrating my ability to <strong>extract insights, visualize data, and optimize processes</strong> using <strong>SQL, Power BI, Python,</strong> and <strong>Excel</strong>.
+        Each project highlights my approach to solving real-world business challenges through data cleaning, analysis, and visualization. 
+        Feel free to explore, and if you have any questions or collaboration opportunities, don’t hesitate to reach out.</br>
+        <strong>Thank you for visiting! </strong>
+      </p>
+      <div class="social-buttons hidden slide-in-left">
+        <a href="https://www.linkedin.com/in/jerome-kofi-gameli-davor/" target="_blank" class="btn">LinkedIn</a>
+        <a href="https://github.com/GameliKofiJerome" target="_blank" class="btn">GitHub</a>
+    </div>
+    </div>
+    <div class="profile-picture hidden slide-in-right">
+      <img src="assets/images/portfolio_profile_1.jpg" alt="Profile Picture">
+    </div>
+  </section>
+
+  <section id="projects">
+    <h1 class="hidden slide-in-left">My Recent Projects</h1>
+    <div class="project-card hidden slide-in-right">
+      <img src="assets/dashboards/landing_page.JPG" alt="Project Thumbnail" class="project-thumbnail">
+      <div class="project-details">
+          <h3>Supplier Quality & Performance Analysis</h3>
+          <p>
+            Innova Manufacturing Ltd, a manufacturing company, faced significant challenges in managing supplier quality and performance due to a lack of a centralized procurement system. 
+            Without a structured approach to assessing supplier reliability, the company struggled with inconsistent vendor performance, defective materials, and production downtime. 
+            Recognizing the need for a data-driven solution, the production management team consolidated supplier and defect-related data across multiple plants. 
+            The objective of this project was to analyze supplier quality, identify the key contributors to material defects and downtime, 
+            and provide actionable insights to optimize supply chain decisions and improve overall manufacturing efficiency.
+          </p>
+      </div>
+      <div class="project-tools">
+        <span class="tool-pill">Power BI</span>
+        <span class="tool-pill">Power Query</span>
+        <span class="tool-pill">DAX</span>
+    </div>
+      <div class="project-card-button">
+          <a href="view-project.html?id=Supplier Quality and Performance Analysis" class="btn">View Project</a>
+      </div>
+    </div>
+
+    <div class="project-card hidden slide-in-right">
+      <img src="assets/dashboards/sales dashboard.JPG" alt="Project Thumbnail" class="project-thumbnail">
+      <div class="project-details">
+          <h3>Product Sales and Performance Analysis</h3>
+          <p>The Product Sales and Performance Analysis project aimed to provide actionable insights into sales trends, revenue performance, 
+             and sales effectiveness within the product marketing and sales industry. 
+             By leveraging Power BI dashboards, the analysis evaluated total revenue, budget alignment, product group performance, sales channels, and salesperson rankings, 
+             offering data-driven recommendations to optimize business strategies.
+             This project underscores the power of data-driven insights in shaping marketing and sales strategies, 
+             helping businesses maximize revenue potential and enhance overall performance.
+          </p>
+      </div>
+      <div class="project-tools">
+          <span class="tool-pill">Power BI</span>
+          <span class="tool-pill">Power Query</span>
+          <span class="tool-pill">DAX</span>
+      </div>
+      <div class="project-card-button">
+          <a href="view-project.html?id=Product Sales and Performance Analysis" class="btn">View Project</a>
+      </div>
+    </div>
+
+    <div class="project-card hidden slide-in-right">
+        <img src="assets/dashboards/revenue_insights_management_dashboard.JPG" alt="Project Thumbnail" class="project-thumbnail">
+        <div class="project-details">
+            <h3>Hospitality Domain Revenue Insights</h3>
+            <p>In today’s competitive hospitality industry, data-driven decision-making is essential for maintaining market leadership and maximizing revenue. 
+              This project focuses on a Revenue Insights Dashboard developed in Power BI for Atliq Grands, a luxury hotel chain facing market share and revenue decline.
+              By analyzing historical data, the dashboard provides key performance indicators (KPIs) such as occupancy rates, average daily rates (ADR), revenue per available room (RevPAR), and competitor benchmarking. 
+              Showcasing how business intelligence and data analytics can play a pivotal role in strategic decision-making, enabling hospitality brands to regain market share and sustain revenue growth.
+            </p>
+        </div>
+        <div class="project-tools">
+          <span class="tool-pill">Power BI</span>
+          <span class="tool-pill">DAX</span>
+          <span class="tool-pill">Microsoft Excel</span>
+      </div>
+        <div class="project-card-button">
+            <a href="view-project.html?id=Hospitality Domain Revenue Insights" class="btn">View Project</a>
+        </div>
+    </div>
+
+    <div style="text-align: center; margin-top: 20px;">
+        <a href="portfolio.html" class="btn hidden slide-in-right">View Full Portfolio</a>
+    </div>
+  </section>
+
+  <section id="contact" class="hidden slide-in-right">
+    <h1>Contact Me</h1>
+    <form action="contact_handler/contact_form_handler.php">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+        
+        <button type="submit" class="btn">Send Message</button>
+    </form>
+  </section>
+
+  <button id="scrollToTop" class="scroll-top-btn">
+    <img src="assets/icons/chevron-up.png" alt="Scroll to Top" class="scroll-icon">
+  </button>
+
+  <footer>
+      <p>&copy; 2025 Jerome Gameli Kofi Davor. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>

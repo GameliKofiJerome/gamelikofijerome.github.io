@@ -1,0 +1,360 @@
+:root {
+    --background-color: #ececec;
+    --text-color: #e0e0e0;
+    --accent-color: #54A1BF; /* Soft pastel pink */
+    --button-hover: #ffb7b2; /* Lighter pastel */
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--background-color);
+    color: var(--text-color);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+footer p {
+    color: #2c3540;
+    text-align: center;
+}
+
+/* Header Styling*/
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #171C26;
+}
+header h1 {
+    color: var(--text-color);
+    margin-left: 60px;
+}
+
+#page-nav ul {
+    font-size: 15px;
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin-right: 60px;
+}
+#page-nav ul li {
+    display: inline;
+}
+#page-nav ul li a {
+    text-decoration: none;
+    color: var(--text-color);
+    position: relative;
+    padding-bottom: 5px;
+}
+#page-nav ul li a:hover::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: var(--accent-color);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+/*Section Styling*/
+section {
+    padding: 50px;
+}
+
+/*Welcome Section Styling*/
+.welcome-section {
+    display: flex;
+    align-items: center;
+    color: #2c3540;
+    justify-content: space-between;
+    width: 80%;
+    margin: 20px auto;
+    padding: 10px;
+  }
+  .welcome-text {
+    text-align: left;
+    max-width: 50%;
+  }
+  .profile-picture img {
+    width: 400px;
+    height: 500px;
+    object-fit: cover;
+    border: 3px solid var(--accent-color);
+    border-radius: 20px;
+}
+
+
+/*Project Card Styling*/
+#projects h1 {
+    color: #2c3540;
+}
+.project-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #304850;
+    padding: 20px;
+    border-radius: 20px;
+    margin: 20px auto;
+    width: 80%;
+    position: relative;
+}
+
+.project-thumbnail {
+    width: 300px;
+    height: 200px;
+    object-fit: contain;
+    border-radius: 15px;
+    margin: 20px auto;
+}
+.project-details {
+    flex: 1;
+    position: relative;
+    padding: 20px;
+}
+.project-details h3 {
+    margin: 0px;
+    color: var(--text-color);
+    text-align: left;
+}
+.project-details p {
+    color: var(--text-color);
+    margin-bottom: 30px;
+    text-align: left;
+}
+.project-card-button a.btn {
+    background: var(--accent-color);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 15px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+}
+.project-card-button a.btn:hover {
+    background: white;
+    color: var(--accent-color);
+    font-weight: bold;
+}
+
+/*Portfolio Page Styling*/
+.projects-container h1 {
+    color: #2c3540;
+}
+.project-tools {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+}
+.tool-pill {
+    background-color: #1e2e34;
+    color: white;
+    font-size: 10px;
+    padding: 5px 10px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+/*Page Button Styling*/
+.btn {
+    background: var(--accent-color);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background 0.2s ease-in-out;
+}
+
+.btn:hover {
+    background: white;
+    border: 1px solid #54a1bf;
+    color: var(--accent-color);
+    font-weight: bold;
+}
+
+/* Contact Form Styling */
+#contact h1 {
+    color: #2c3540;
+}
+#contact form {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #304850;
+    padding: 50px;
+    border-radius: 10px;
+    width: 60%;
+    margin: auto;
+}
+#contact form label {
+    color: var(--text-color);
+    margin: 10px 0 5px;
+}
+#contact form input, form textarea {
+    width: 90%;
+    padding: 10px;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    transition: border 0.2s ease-in-out;
+}
+#contact form input:hover, form textarea:hover {
+    border-color: var(--accent-color);
+    outline: none;
+}
+#contact form button.btn {
+    background: var(--accent-color);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    font-size: 15px;
+    border-radius: 20px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background 0.2s ease-in-out;
+}
+#contact form button.btn:hover {
+    background: white;
+    color: var(--accent-color);
+    font-weight: bold;
+}
+
+/*View Project Page Styling*/
+.container {
+    color: #2c3540;
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    padding: 10px;
+}
+.container h2 {
+    color: #2c3540;
+    position: relative;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    font-size: 25px;
+}
+.container h2::after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #54A1BF; /* Adjust color as needed */
+    margin-top: 8px;
+    border-radius: 2px; /* Optional for smooth edges */
+}
+ .frame-container {
+    width: 100%;
+    max-width: 1000px; /* Adjust based on your design */
+    margin: auto;
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+}
+#frame-info {
+    text-align: center;
+}
+#project-frame {
+    width: 100%;
+    height: 600px; /* Adjust height as needed */
+    border-radius: 10px; /* Optional: Rounded corners */
+    border: none;
+    margin-bottom: 20px;
+}
+h2{
+    color: #2c3540;;
+    text-align: left;
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: white;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+p, ul {
+    text-align: left;
+    line-height: 1.7;
+    font-size: 15px;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+
+/*Scroll to Top Button*/
+.scroll-top-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: none;
+  }
+  .scroll-top-btn:hover::after {
+    content: "Back to Top";
+    position: absolute;
+    bottom: 50px;
+    right: 5px;
+    background: #1e2e34;
+    color: white;
+    padding: 10px;
+    border-radius: 15px;
+    font-size: 11px;
+    white-space: nowrap;
+}
+  .scroll-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+/*Slide In Effect Styling*/
+/* General hidden state before animation */
+.hidden {
+    opacity: 0;
+    transform: translateY(40px); /* Adjust based on direction */
+    transition: all 0.8s ease-out;
+}
+/* Slide in from bottom */
+.slide-in-bottom {
+    transform: translateY(40px);
+}
+/* Slide in from left */
+.slide-in-left {
+    transform: translateX(-40px);
+}
+/* Slide in from right */
+.slide-in-right {
+    transform: translateX(40px);
+}
+/* When elements are in view, activate animation */
+.show {
+    opacity: 1;
+    transform: translateX(0) translateY(0);
+}
