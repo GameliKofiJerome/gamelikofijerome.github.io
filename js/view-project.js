@@ -450,6 +450,225 @@ document.addEventListener("DOMContentLoaded", function() {
                                 <li><strong>Localized Marketing:</strong> Invest in <strong>region-specific campaigns</strong>, especially in high-retention areas, to strengthen customer loyalty.</li>
                               </ul>
                               `
+        },
+
+    "Customer Segmentation and Analysis": {
+            title: "From Data to Strategy: Customer Segmentation in Online Retail",
+
+            frameSrc: "https://nbviewer.org/github/GameliKofiJerome/Customer-Segmentation-and-Analysis/blob/main/Customer%20Segmentation%20Analysis%20-%20K-Means%20Clustering%20and%20RFM%20Analysis.ipynb",
+
+            about: `
+                    <p>
+                      <strong>Customer segmentation</strong> is a crucial strategy in the e-commerce and retail industry, enabling businesses to identify and group customers based on purchasing behavior, engagement and other key metrics. 
+                      This project utilized Python data libraries—<strong>Pandas, NumPy, and Plotly</strong>—along with the <strong>K-Means Clustering algorithm</strong> to analyze over <strong>500,000</strong> customer transaction data. 
+                      By segmenting customers based on <strong>RFM (Recency, Frequency, Monetary)</strong> metrics into identify distinct groups, the aim is to enable the client, 
+                      owners of an online retail store implement effective <strong>data-driven customer centric marketing strategies to optimize customer engagement and retention, and improve revenue generation</strong>.
+                    </p>
+                    `,
+
+            solution: `
+                      <p>The analysis was conducted in <strong>three (3)</strong> stages:</p>
+                      <h3><strong>1. Data Wrangling</strong></h3>
+                      <ul>
+                        <li>Loaded raw customer transaction data into a pandas DataFrame</li>
+                        <li>Cleaned the dataset by handling missing values, removing duplicates,correcting data types and formatting data values.etc</li>
+                        <li>Created new customer transaction features (e.g., transaction type, total amount).</li>
+                      </ul>
+                      <p>Click on this link to access the steps/processes undertaken at this stage &rarr;
+                        <a href="https://nbviewer.org/github/GameliKofiJerome/Customer-Segmentation-and-Analysis/blob/main/Customer%20Segmentation%20Analysis%20-%20Data%20Wrangling%20%28Cleaning%20%26%20Preparation%29.ipynb" target="_blank">
+                                Data Wrangling (Cleaning and Preparation)
+                        </a>
+                      </p>
+
+                      <h3><strong>2. Exploratory Data Analysis (EDA)</strong></h3>
+                      <ul>
+                        <li>Performed descriptive statistics and used visualizations highlight key aspects of the dataset.</li>
+                        <li>Used Plotly to generate insightful and interactive visualizations (pie charts, bar charts and area charts).</li>
+                        <li>Identified trends in transaction types, transaction trends and customer distributions.</li>
+                      </ul>
+                      <p>Click on this link to access the steps/processes undertaken at this stage &rarr;
+                        <a href="https://nbviewer.org/github/GameliKofiJerome/Customer-Segmentation-and-Analysis/blob/main/Customer%20Segmentation%20Analysis%20-%20Exploratory%20Data%20Analysis.ipynb" target="_blank">
+                                Exploratory Data Analysis (EDA)
+                        </a>
+                      </p>
+
+                      <h3><strong>3. RFM Analysis & Customer Segmentation</strong></h3>
+                      <ul>
+                        <li>Conducted Recency, Frequency, and Monetary (RFM) analysis to categorize customers based on:</li>
+                          <ul>
+                            <li><strong>Recency</strong> (How recently they made a purchase)</li>
+                            <li><strong>Frequency</strong> (How often they purchase)</li>
+                          <li><strong>Monetary Value</strong> (How much they spend)</li>
+                        </ul>
+                      </ul>
+                      <ul>
+                        <li>Used <strong>K-Means Clustering</strong> to segment customers into distinct groups (e.g., High-Value Customers, Average-Value Customers, Low-Value Customers).</li>
+                        <li>Evaluated optimal cluster count using the <strong>Elbow Method</strong></li>
+                      </ul>
+                      <p>Click on this link to access the steps/processes undertaken at this stage &rarr;
+                        <a href="https://nbviewer.org/github/GameliKofiJerome/Customer-Segmentation-and-Analysis/blob/main/Customer%20Segmentation%20Analysis%20-%20K-Means%20Clustering%20and%20RFM%20Analysis.ipynb" target="_blank">
+                                RFM (Recency, Frequency, Monetary) Analysis & Customer Segmentation
+                        </a>
+                      </p>
+                      `,
+
+            dataProcess: `
+                          <p>
+                            The dataset used for this project encompasses a diverse array of more than 500K transactions, capturing the interactions of customers on the online retail platform. 
+                            Features such as transaction dates, purchase amounts, and customer identifiers form the foundation for a comprehensive exploration of customer dynamics. 
+                            The following is a description of the columns that make up the dataset. For each data record, there are 8 variables
+                          </p>
+                          <ol>
+                            <li><strong>InvoiceNo:</strong> This is a 6-digit integer number, uniquely assigned to each transaction. If the code starts with a 'C', it indicates a cancelled transaction.</li>
+                            <li><strong>stockCode:</strong> This is a 5-digit integer number uniquely assigned to a distinct product on the online retail store.</li>
+                            <li><strong>Description:</strong> Product(item) name.</li>
+                            <li><strong>Quantity:</strong> The count or quantities of each product(item) per transaction.</li>
+                            <li><strong>InvoiceDate:</strong> Invoice date and time. Day and time when each transaction was generated.</li>
+                            <li><strong>UnitPrice:</strong> Product price per unit in pound sterling.</li>
+                            <li><strong>CustomerID:</strong> 5-digit number uniquely assigned to each customer.</li>
+                            <li><strong>Country:</strong> Country where each customer resides.</li>
+                          </ol>
+                          <p>As outlined in the solution approach the project analysis was done in <strong>three(3)<strong> stages:</p>
+                          <ul>
+                            <li>Data Wrangling (Cleaning and Preparation)</li>
+                            <li>Exploratory Data Analysis (EDA)</li>
+                            <li>RFM (Recency, Frequency, Monetary) Analysis & Customer Segmentation</li>
+                          </ul>
+                          `,
+
+            insights: `
+                      <p>
+                        This report summarizes the <strong>most significant findings</strong> from the <strong>Exploratory Data Analysis (EDA)</strong> and 
+                        <strong>RFM (Recency, Frequency, Monetary) Analysis</strong> stages of the <strong>Customer Segmentation and Analysis Project</strong> undertaken for management and key stakeholders of the online retail store. 
+                        The insights below highlight transaction trends, customer purchasing behavior, and actionable takeaways for key stakeholders.
+                      </p>
+
+                      <h3>Key Insights from Exploratory Data Analysis (EDA)</h3>
+                      <ol>
+                        <li><strong>Transaction Types and Sales Performance</strong></li>
+                          <ul>
+                            <li>Sales transactions accounted for 94.9% of total transactions, accumulating £8.74 million in revenue.</li>
+                            <li>Cancelled transactions were minimal (5.12%), but still resulted in £471,742.31 in lost revenue.</li>
+                          </ul>
+
+                        <li><strong>Monthly & Yearly Sales Trends</strong></li>
+                          <ul>
+                            <li>November 2011 recorded the highest sales (£1.137 million), showing a seasonal increase in demand.</li>
+                            <li>Sales dipped in February and April 2011, highlighting potential seasonal slowdowns.</li>
+                            <li>December 2010 had better sales performance than December 2011, suggesting market changes or competition effects.</li>
+                          </ul>
+
+                        <li><strong>Sales and Cancellations by Country</strong></li>
+                          <ul>
+                            <li>United Kingdom had the highest sales volume and revenue (£7.2 million, ~348,800 transactions).</li>
+                            <li>Germany and France followed as key markets, while Saudi Arabia had the lowest sales (£145.92).</li>
+                            <li>Cancelled transactions were highest in the UK (£440,301.34), followed by Germany and Ireland.</li>
+                            <li>Least cancellations occurred in Saudi Arabia and the EU, suggesting higher transaction reliability in those regions.</li>
+                          </ul>
+
+                        <li><strong>Customer Buying Patterns by Time of Day</strong></li>
+                          <ul>
+                            <li>Mornings saw the highest sales across most months in 2011, with October recording the highest morning sales (£144,624.77).</li>
+                            <li>Afternoon sales peaked in August, November, and December, indicating possible work-break shopping habits.</li>
+                            <li>Evening sales were consistently lower across all months, suggesting limited consumer engagement at night.</li>
+                          </ul>
+
+                        <li><strong>Top and Bottom Performing Countries by Customer Count</strong></li>
+                          <ul>
+                            <li>UK had the highest customer base (3,943 customers), reinforcing its dominance as the primary market.</li>
+                            <li>Austria had the lowest customer count among the top 10 countries.</li>
+                            <li>Bahrain had the highest customer count among the lowest-ranked countries, while Czech Republic, Lithuania, Lebanon, and Singapore had only 1 customer each.</li>
+                          </ul>
+                      </ol>
+
+                       <h3>Key Insights from RFM Analysis (Customer Segmentation)</h3>
+                      <ol>
+                        <li><strong>Customer Segments by Value</strong></li>
+                          <ul>
+                            <li>Average-Value Customers were the largest segment, making up 74.2% (3,239 customers).</li>
+                            <li>Low-Value Customers accounted for 25.4% (1,108 customers).</li>
+                            <li>High-Value Customers were the smallest but most important segment, representing only 0.37% (16 customers).</li>
+                          </ul>
+
+                        <li><strong>Recency (Last Purchase Date) Trends</strong></li>
+                          <ul>
+                            <li>High-Value Customers had the most recent transactions, with an average recency of 410 days.</li>
+                            <li>Low-Value Customers had the longest recency period, averaging 271,673 days, indicating a large number of inactive customers.</li>
+                          </ul>
+
+                        <li><strong>Frequency (Purchase Repetition) Patterns</strong></li>
+                          <ul>
+                            <li>Average-Value Customers had the highest transaction frequency (18,325 orders), showing regular engagement.</li>
+                            <li>High-Value Customers had a lower frequency (1,433 orders) but contributed significantly to revenue.</li>
+                            <li>Low-Value Customers had the lowest frequency (2,030 orders), indicating one-time or infrequent buyers.</li>
+                          </ul>
+
+                        <li><strong>Monetary Value Analysis</strong></li>
+                          <ul>
+                            <li>Average-Value Customers generated the highest revenue (£6.49 million).</li>
+                            <li>High-Value Customers contributed £2.07 million, despite their smaller size.</li>
+                            <li>Low-Value Customers contributed only £639,774, highlighting their limited impact on revenue.</li>
+                          </ul>
+
+                        <li><strong>Relationship Between Frequency & Monetary Value</strong></li>
+                          <ul>
+                            <li>Higher purchase frequency did not always translate into higher spending.</li>
+                            <li>High-Value Customers had fewer transactions but significantly higher spending per order.</li>
+                            <li>Average-Value Customers had the widest range of spending, from £0 to £67,387 per transaction.</li>
+                          </ul>
+
+                        <li><strong>Relationship Between Recency & Monetary Value</strong></li>
+                          <ul>
+                            <li>Most High-Value Customers made recent purchases (0-325 days) and had the highest spending per visit.</li>
+                            <li>Most Average-Value Customers transacted within 0-162 days, with a spending peak of £67,387.</li>
+                            <li>Low-Value Customers had the longest inactivity periods, with low spending except for a few outliers.</li>
+                          </ul>
+                      </ol>
+                   `,
+
+            recommendations: `
+                              <p>From the Key Insights drawn for the analysis, the following are actionable recommendations for business decision making.</p>
+                              <ol>
+                                <li><strong>Customer Retention & Loyalty Programs</strong></li>
+                                  <ul>
+                                    <li>Implement loyalty programs and targeted discounts to convert Average-Value Customers into High-Value Customers.</li>
+                                    <li>Introduce personalized email campaigns and exclusive offers for customers with high recency but low frequency to boost repeat purchases.</li>
+                                  </ul>
+
+                                <li><strong>Optimizing Sales by Time and Season</strong></li>
+                                  <ul>
+                                    <li>Leverage high-performing months like November and December with increased promotions and ad spend.</li>
+                                    <li>Target morning and afternoon shoppers with limited-time discounts, as these periods generate the most sales.</li>
+                                    <li>Explore ways to increase evening sales engagement, such as special night-time discounts or limited-time offers.</li>
+                                  </ul>
+
+                                <li><strong>Improving Market Penetration in High-Growth Countries</strong></li>
+                                  <ul>
+                                    <li>Strengthen marketing efforts in top-performing countries (UK, Germany, France) with localized promotions.</li>
+                                    <li>Investigate reasons for high cancellations in the UK and Germany to improve checkout reliability and reduce cart abandonment.</li>
+                                    <li>Expand brand awareness in low-engagement regions (Saudi Arabia, Czech Republic, Lithuania) through geo-targeted ads.</li>
+                                  </ul>
+
+                                <li><strong>Data-Driven Customer Segmentation & Marketing Strategy</strong></li>
+                                  <ul>
+                                    <li>Use RFM-based segmentation to create customized marketing campaigns:</li>
+                                      <ul>
+                                        <li><strong>High-Value Customers:</strong> Exclusive VIP perks & early product access.</li>
+                                        <li><strong>Average-Value Customers:</strong> Reward programs & personalized recommendations.</li>
+                                        <li><strong>Low-Value Customers:</strong> Re-engagement campaigns & first-time purchase incentives.</li>
+                                      </ul>
+                                    <li>Optimize cross-selling & upselling strategies for high-frequency, low-monetary customers to increase their purchase value.</li>
+                                    <li>Monitor and adjust pricing strategies based on high-performing products in specific segments and markets.</li>
+                                  </ul>
+                              </ol>
+
+                            <h3>Conclusion</h3>
+                            <p>
+                              The <strong>Customer Segmentation and Analysis</strong> provides critical insights into sales performance, transaction behaviors, and customer engagement trends. 
+                              By implementing <strong>data-driven retention strategies, optimizing marketing efforts, and improving sales forecasting</strong>, the company can <strong>increase revenue, 
+                              reduce customer churn, and enhance long-term customer relationships</strong>.
+                            </p>
+                              `
         }
         // Add more projects here
     };
