@@ -455,8 +455,8 @@ document.addEventListener("DOMContentLoaded", function() {
     "Customer Segmentation and Analysis": {
             title: "From Data to Strategy: Customer Segmentation in Online Retail",
 
-            frameSrc: "https://nbviewer.org/github/GameliKofiJerome/Customer-Segmentation-and-Analysis/blob/main/Customer%20Segmentation%20Analysis%20-%20K-Means%20Clustering%20and%20RFM%20Analysis.ipynb",
-
+            // frameSrc: "https://nbviewer.org/github/GameliKofiJerome/Customer-Segmentation-and-Analysis/blob/main/Customer%20Segmentation%20Analysis%20-%20K-Means%20Clustering%20and%20RFM%20Analysis.ipynb",
+            frameSrc: "assets/documents/Customer Segmentation Analysis - K-Means Clustering and RFM Analysis.html",
             about: `
                     <p>
                       <strong>Customer segmentation</strong> is a crucial strategy in the e-commerce and retail industry, enabling businesses to identify and group customers based on purchasing behavior, engagement and other key metrics. 
@@ -475,7 +475,7 @@ document.addEventListener("DOMContentLoaded", function() {
                         <li>Created new customer transaction features (e.g., transaction type, total amount).</li>
                       </ul>
                       <p>Click on this link to access the steps/processes undertaken at this stage &rarr;
-                        <a href="https://nbviewer.org/github/GameliKofiJerome/Customer-Segmentation-and-Analysis/blob/main/Customer%20Segmentation%20Analysis%20-%20Data%20Wrangling%20%28Cleaning%20%26%20Preparation%29.ipynb" target="_blank">
+                        <a href="assets/documents/Customer Segmentation Analysis - Data Wrangling (Cleaning & Preparation).html" target="_blank">
                                 Data Wrangling (Cleaning and Preparation)
                         </a>
                       </p>
@@ -487,7 +487,7 @@ document.addEventListener("DOMContentLoaded", function() {
                         <li>Identified trends in transaction types, transaction trends and customer distributions.</li>
                       </ul>
                       <p>Click on this link to access the steps/processes undertaken at this stage &rarr;
-                        <a href="https://nbviewer.org/github/GameliKofiJerome/Customer-Segmentation-and-Analysis/blob/main/Customer%20Segmentation%20Analysis%20-%20Exploratory%20Data%20Analysis.ipynb" target="_blank">
+                        <a href="assets/documents/Customer Segmentation Analysis - Exploratory Data Analysis Report.html" target="_blank">
                                 Exploratory Data Analysis (EDA)
                         </a>
                       </p>
@@ -506,7 +506,7 @@ document.addEventListener("DOMContentLoaded", function() {
                         <li>Evaluated optimal cluster count using the <strong>Elbow Method</strong></li>
                       </ul>
                       <p>Click on this link to access the steps/processes undertaken at this stage &rarr;
-                        <a href="https://nbviewer.org/github/GameliKofiJerome/Customer-Segmentation-and-Analysis/blob/main/Customer%20Segmentation%20Analysis%20-%20K-Means%20Clustering%20and%20RFM%20Analysis.ipynb" target="_blank">
+                        <a href="assets/documents/Customer Segmentation Analysis - K-Means Clustering and RFM Analysis.html" target="_blank">
                                 RFM (Recency, Frequency, Monetary) Analysis & Customer Segmentation
                         </a>
                       </p>
