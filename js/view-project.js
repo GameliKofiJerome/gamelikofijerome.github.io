@@ -455,8 +455,8 @@ document.addEventListener("DOMContentLoaded", function() {
     "Customer Segmentation and Analysis": {
             title: "From Data to Strategy: Customer Segmentation in Online Retail",
 
-            // frameSrc: "https://nbviewer.org/github/GameliKofiJerome/Customer-Segmentation-and-Analysis/blob/main/Customer%20Segmentation%20Analysis%20-%20K-Means%20Clustering%20and%20RFM%20Analysis.ipynb",
-            frameSrc: "assets/documents/Customer Segmentation Analysis - K-Means Clustering and RFM Analysis.html",
+            frameSrc: "https://nbviewer.org/github/GameliKofiJerome/Customer-Segmentation-and-Analysis/blob/main/Customer%20Segmentation%20Analysis%20-%20K-Means%20Clustering%20and%20RFM%20Analysis.ipynb",
+
             about: `
                     <p>
                       <strong>Customer segmentation</strong> is a crucial strategy in the e-commerce and retail industry, enabling businesses to identify and group customers based on purchasing behavior, engagement and other key metrics. 
@@ -475,7 +475,7 @@ document.addEventListener("DOMContentLoaded", function() {
                         <li>Created new customer transaction features (e.g., transaction type, total amount).</li>
                       </ul>
                       <p>Click on this link to access the steps/processes undertaken at this stage &rarr;
-                        <a href="assets/documents/Customer Segmentation Analysis - Data Wrangling (Cleaning & Preparation).html" target="_blank">
+                        <a href="https://nbviewer.org/github/GameliKofiJerome/Customer-Segmentation-and-Analysis/blob/main/Customer%20Segmentation%20Analysis%20-%20Data%20Wrangling%20%28Cleaning%20%26%20Preparation%29.ipynb" target="_blank">
                                 Data Wrangling (Cleaning and Preparation)
                         </a>
                       </p>
@@ -487,7 +487,7 @@ document.addEventListener("DOMContentLoaded", function() {
                         <li>Identified trends in transaction types, transaction trends and customer distributions.</li>
                       </ul>
                       <p>Click on this link to access the steps/processes undertaken at this stage &rarr;
-                        <a href="assets/documents/Customer Segmentation Analysis - Exploratory Data Analysis Report.html" target="_blank">
+                        <a href="https://nbviewer.org/github/GameliKofiJerome/Customer-Segmentation-and-Analysis/blob/main/Customer%20Segmentation%20Analysis%20-%20Exploratory%20Data%20Analysis.ipynb" target="_blank">
                                 Exploratory Data Analysis (EDA)
                         </a>
                       </p>
@@ -506,7 +506,7 @@ document.addEventListener("DOMContentLoaded", function() {
                         <li>Evaluated optimal cluster count using the <strong>Elbow Method</strong></li>
                       </ul>
                       <p>Click on this link to access the steps/processes undertaken at this stage &rarr;
-                        <a href="assets/documents/Customer Segmentation Analysis - K-Means Clustering and RFM Analysis.html" target="_blank">
+                        <a href="https://nbviewer.org/github/GameliKofiJerome/Customer-Segmentation-and-Analysis/blob/main/Customer%20Segmentation%20Analysis%20-%20K-Means%20Clustering%20and%20RFM%20Analysis.ipynb" target="_blank">
                                 RFM (Recency, Frequency, Monetary) Analysis & Customer Segmentation
                         </a>
                       </p>
@@ -669,6 +669,187 @@ document.addEventListener("DOMContentLoaded", function() {
                               reduce customer churn, and enhance long-term customer relationships</strong>.
                             </p>
                               `
+        },
+
+      "Customer Churn and Prediction Analysis": {
+            title: "Customer Churn and Prediction Analysis",
+
+            frameSrc: "https://app.powerbi.com/reportEmbed?reportId=15d87674-9761-4b68-ace5-3e13005bdfc0&autoAuth=true&ctid=afab14ca-ab60-42a6-8a29-ff101424f318&navContentPaneEnabled=false&filterPaneEnabled=false",
+
+            about: `<p>
+                      This project focuses on reducing customer churn in the telecom industry by combining data engineering, business intelligence, and machine learning to deliver a full-scale, data-driven solution. 
+                      It integrates a robust ETL pipeline in SQL Server, insightful Power BI dashboards, and a predictive Random Forest model to identify at-risk customers and uncover churn patterns. 
+                      By transforming complex data into clear, actionable insights, the project empowers stakeholders to make smarter decisions and implement targeted retention strategies. 
+                      Its innovative approach not only enhances customer loyalty but also holds the potential to significantly boost revenue and operational efficiency.
+                    </p>`,
+
+            solution: `
+                      <p>The following structured approach was taken to solve the business challenge of identifying and reducing customer churn. 
+                        The solution was designed to be scalable, insightful, and actionable—supporting both analytical needs and strategic decision-making.
+                      </p>
+                        <h3>1. Data Acquisition and Preparation (ETL Process – SQL Server)</h3>
+                          <ul>
+                              <li>Extracted raw customer data from source systems into a centralized SQL Server environment.</li>
+                              <li>Transformed the data by cleaning inconsistencies, handling missing values, and formatting columns for consistency.</li>
+                              <li>Loaded the refined data into a customer table and created SQL views to support different levels of analysis (demographic, geographic, account, and service).</li>
+                          </ul>
+
+                          <h3>2. Data Exploration and Modeling (Power BI)</h3>
+                          <ul>
+                              <li>Imported cleaned data into Power BI.</li>
+                              <li>Wrote DAX measures to track KPIs and churn metrics.</li>
+                              <li>Designed an interactive dashboard to monitor:</li>
+                              <ul>
+                                <li>Total customers, churn, churn rate, and new joiners</li>
+                                <li>Regional and demographic churn patterns</li>
+                                <li>Subscription behavior across different services</li>
+                              </ul>
+                          </ul>
+
+                          <h3>3. Churn Prediction Modeling (Python – Random Forest Classifier)</h3>
+                          <ul>
+                              <li>Selected the Random Forest algorithm due to its robustness, interpretability, and ability to handle feature interactions.</li>
+                              <li>Preprocessed data by encoding categorical variables and splitting into training and test sets.</li>
+                              <li>Trained the model on churn data and evaluated using accuracy, precision, recall, and confusion matrix.</li>
+                              <li>Performed feature importance analysis to identify the top drivers of churn (e.g., tenure, contract type, monthly charges).</li>
+                          </ul>`,
+
+            dataProcess: `
+                          <h4>1. Data Source:</h4>
+                          <p>
+                            The dataset used in this analysis was sourced from a telecommunications service provider and consists of customer records capturing various attributes relevant to churn analysis. 
+                            The data includes:
+                          </p>
+                          <ul>
+                              <li><strong>Demographic Information: </strong>Gender, age group, senior citizen status, and partner/dependents.</li>
+                              <li><strong>Geographic Attributes: </strong>Customer location details such as state or region.</li>
+                              <li><strong>Account and Payment Details: </strong>Tenure, contract type, monthly and total charges, payment methods.</li>
+                              <li><strong>Service Usage:</strong> Subscriptions to internet, phone, streaming services, technical support, and more.</li>
+                              <li><strong>Churn Label:</strong> Indicates whether a customer has churned or remained with the service.</li>
+                          </ul>
+                          <p>
+                            This rich, multi-dimensional dataset provides a holistic view of customer behavior and service interaction, essential for understanding and predicting churn.
+                          </p>
+
+                            <h4>2. Development Process:</h4>
+                            <p>
+                              The development process was broken down into three structured phases:
+                            </p>
+                            <ol type="A">
+                                <li><strong>Data Extraction, Transformation, and Loading (ETL – SQL Server)</strong></li>
+                                  <ul>
+                                    <li>Extracted and imported raw CSV data into a SQL Server database.</li>
+                                    <li>Cleaned data by handling nulls, correcting inconsistencies, and converting data types.</li>
+                                    <li>Created SQL table and views to organize customer data into logical entities (e.g., churned customers, new joiners).</li>
+                                    <li>Normalized the structure to enable scalable querying and integration into BI and ML tools.</li>
+                                  </ul></br>
+                                <li><strong>Metrics Creation and Visualization (Power BI)</strong></li>
+                                  <ul>
+                                    <li>Imported SQL table and views into Power BI Desktop to build an efficient data model.</li>
+                                    <li>Created Metrics using DAX to track key trends across data points (demographic, geographic, payment and account info, and services).li>
+                                    <li>Developed interactive dashboards to explore:</li>
+                                      <ul>
+                                        <li>Total customers, churn rate, and service usage</li>
+                                        <li>Churn trends across geography, demographics, and services</li>
+                                        <li>Time-based patterns in customer acquisition and loss</li>
+                                      </ul>
+                                  </ul></br>
+                                <li><strong>Predictive Modeling (Python – Random Forest Classifier)</strong></li>
+                                  <ul>
+                                    <li>Preprocessed the data: categorical encoding, feature scaling, and data splitting.</li>
+                                    <li>Trained a Random Forest Classifier using features such as tenure, service subscriptions, and contract type.</li>
+                                    <li>Evaluated performance with metrics including accuracy, precision, recall, and feature importance.</li>
+                                  </ul>
+                                  <p>Click on this link to view Predictive Modeling using Random Forest Classifier &rarr;
+                                      <a href="https://nbviewer.org/github/GameliKofiJerome/customer-churn-and-prediction-analysis/blob/main/churn_prediction.ipynb" target="_blank">
+                                              Churn Predictive Modeling
+                                      </a>
+                                  </p>
+                            </ol> `,
+
+            insights: `
+                      <h3>Executive Summary:</h3>
+                      <p>
+                        Out of <strong>6,418 total customers</strong>, <strong>1,732 churned</strong> – resulting in a <strong>high churn rate of 27.0%</strong>. Female customers represented a majority of churn, 
+                        with the <strong>36–50 age group consistently leading churn across demographics</strong>. A critical churn window was identified in the <strong>6–12 month tenure range</strong>. 
+                        Low monthly charges are associated with lower churn rates.
+                      </p>
+
+                       <h3>Key Findings:</h3>
+
+                        <h4>1. Churn Hotspots by Tenure</h4>
+                        <ul>
+                            <li><strong>Tenure group 6–12 months</strong> saw the highest churn divergence across most segments.</li>
+                            <li>Customers in this tenure group are <strong>most vulnerable to churn</strong>, regardless of gender, age, or spending tier.</li>
+                        </ul>
+
+                        <h4>2. Demographic Drivers of Churn</h4>
+                        <ul>
+                            <li><strong>Females accounted for 64.1%</strong> of all churned customers (1,111 vs 621).</li>
+                            <li>The <strong>36–50 age group</strong> consistently leads in churn across all charge tiers and marital statuses.</li>
+                        </ul>
+
+                        <h4>3. Impact of Monthly Charges on Churn</h4>
+                            <ul>
+                                <li>Customers paying <strong>less than $20/month had the lowest churn</strong> rates (as low as 9.9%)</li>
+                                <li><strong>Churn rate rises significantly with monthly charges</strong> >$50, peaking at 34.4% in the $50–$100 range</li>
+                            </ul>
+
+                        <h4>4. Marital Status Correlation</h4>
+                        <ul>
+                            <li>Churn rates were consistently higher among <strong>unmarried customers</strong>.</li>
+                            <li>Both married and unmarried females had <strong>significantly higher churn than their male counterparts</strong>.</li>
+                        </ul>
+
+                      <h4>5. Churn Prediction Model Alignment</h4>
+                      <ul>
+                        <li>Model flagged <strong>381 likely churners:</strong> 248 females and 133 males.</li>
+                        <li>Top predicted churn demographic: <strong>Females aged 36–50</strong> (34% of predictions)</li>
+                        <li>Predictions align with actual churn patterns – <strong>validating model reliability.</strong></li>
+                      </ul>
+                      
+                      <h3>Business Implications:</h3>
+                      <ol>
+                        <li><strong>Customer Lifetime Value at Risk:</strong> Mid-tenure churn threatens ROI on acquisition costs.</li>
+                        <li><strong>Brand Perception:</strong> High churn among females may reflect perceived service gaps – opportunities exist to enhance customer experience.</li>
+                        <li><strong>Revenue Loss Concentration:</strong> Churn is concentrated among higher-paying customers, representing significant revenue leakage.</li>
+                      </ol>
+                   `,
+
+            recommendations: `
+                      <p>The following are industry-tailored, actionable recommendations focused on empowering stakeholders take data-driven decisions to reduce customer churn.</p>
+                      <table>
+                        <thead>
+                          <tr>
+                            <th>Priority</th>
+                            <th>Initiative</th>
+                            <th>Impact</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>High</td>
+                            <td><strong>First-Year Engagement Program</strong> targeting customers in months 6–12 with onboarding, tutorials, and retention offers</td>
+                            <td>Reduce early-stage churn</td>
+                          </tr>
+                          <tr>
+                            <td>Medium</td>
+                            <td><strong>Female-Centric Campaigns</strong> (36–50 age group), focusing on convenience, support, and loyalty</td>
+                            <td>Target high-risk demographic</td>
+                          </tr>
+                          <tr>
+                            <td></td>
+                            <td><strong>Pricing Review</strong> for $50+ tiers – introduce value packs, loyalty points, or tiered perks</td>
+                            <td>Improve satisfaction & retention in high-value customers</td>
+                          </tr>
+                          <tr>
+                            <td>Low</td>
+                            <td><strong>Lifestyle-Based Retention</strong> for Unmarried customers, possibly bundling services or personalized benefits</td>
+                            <td>Enhance engagement with high-churn segment</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                     `
         }
         // Add more projects here
     };
