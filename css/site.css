@@ -358,3 +358,19 @@ ul {
     opacity: 1;
     transform: translateX(0) translateY(0);
 }
+
+/*Table Styling*/
+table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+}
+th, td {
+      padding: 0.75rem;
+      border: 1px solid #ddd;
+      text-align: left;
+}
+th {
+      background-color: #253f5e;
+      color: white;
+}
