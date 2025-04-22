@@ -681,7 +681,15 @@ document.addEventListener("DOMContentLoaded", function() {
                       It integrates a robust ETL pipeline in SQL Server, insightful Power BI dashboards, and a predictive Random Forest model to identify at-risk customers and uncover churn patterns. 
                       By transforming complex data into clear, actionable insights, the project empowers stakeholders to make smarter decisions and implement targeted retention strategies. 
                       Its innovative approach not only enhances customer loyalty but also holds the potential to significantly boost revenue and operational efficiency.
-                    </p>`,
+                    </p>
+                    <h3>Key Objectives:</h3>
+                    <ul>
+                      <li>Analyze customer behavior across demographic, geographic, account, and service dimensions</li>
+                      <li>Visualize churn patterns and business-critical trends using interactive Power BI dashboards</li>
+                      <li>Predict future churn using a Random Forest model for proactive retention strategies</li>
+                      <li>Support marketing and service teams with data-driven recommendations to reduce churn</li>
+                    </ul>
+                    `,
 
             solution: `
                       <p>The following structured approach was taken to solve the business challenge of identifying and reducing customer churn. 
