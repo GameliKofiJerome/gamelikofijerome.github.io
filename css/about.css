@@ -53,6 +53,9 @@ header h1 {
     position: relative;
     padding-bottom: 5px;
 }
+#page-nav ul li a:hover {
+    color: var(--accent-color);
+}
 #page-nav ul li a:hover::after {
     content: '';
     display: block;
