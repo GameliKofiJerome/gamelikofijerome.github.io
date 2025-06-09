@@ -27,7 +27,7 @@ if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
   exit;
 }
 
-$to = davorgamelikofijerome@gmail.com; // Replace with your email
+$to = "davorgamelikofijerome@gmail.com"; // Replace with your email
 $subject = "New message from $name";
 $body = "Name: $name\nEmail: $email\nMessage:\n$message";
 $headers = "From: $email\r\nReply-To: $email\r\n";

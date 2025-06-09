@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
     .then(data => {
       if (data.success) {
         alert("Thank you! Your message has been sent.");
-        window.location.href = "thank_you.html";
+        window.location.href = "index.html";
       } else {
         alert("Error: " + data.error);
       }
