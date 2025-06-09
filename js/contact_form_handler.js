@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", function () {
         };
 
         // Send form data via Fetch API
-        fetch("contact_handler/contact_form_handler.php", {
+        fetch("contact_form_handler.php", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
