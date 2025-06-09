@@ -12,7 +12,7 @@ if (!$name || !$email || !$message) {
     exit;
 }
 
-$to = "your-email@example.com";
+$to = "davorgamelikofijerome@gmail.com";
 $subject = "New Contact Form Message from $name";
 $body = "Name: $name\nEmail: $email\nMessage:\n$message";
 $headers = "From: $email";
