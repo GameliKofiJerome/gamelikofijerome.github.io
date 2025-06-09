@@ -1,60 +1,50 @@
-document.addEventListener("DOMContentLoaded", function () {
-    document.getElementById("contact-form").addEventListener("submit", function (event) {
-        event.preventDefault(); // Prevent default form submission
+document.addEventListener("DOMContentLoaded", () => {
+  const form = document.getElementById("contact-form");
 
-        let errors = "";
-        let name = document.getElementById("name").value.trim();
-        let email = document.getElementById("email").value.trim();
-        let message = document.getElementById("message").value.trim();
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
 
-        // Validate required fields
-        if (!name || !email || !message) {
-            errors += "Error: All fields are required.\n";
-        }
+    let name = DOMPurify.sanitize(document.getElementById("name").value.trim());
+    let email = DOMPurify.sanitize(document.getElementById("email").value.trim());
+    let message = DOMPurify.sanitize(document.getElementById("message").value.trim());
 
-        // Email validation
-        const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-        if (!emailPattern.test(email)) {
-            errors += "Error: Invalid email address.\n";
-        }
+    let errors = [];
 
-        if (errors) {
-            alert(errors); // Display errors in a user-friendly way
-            return;
-        }
+    if (!name || !email || !message) {
+      errors.push("All fields are required.");
+    }
 
-        // Sanitize input
-        name = DOMPurify.sanitize(name);
-        email = DOMPurify.sanitize(email);
-        message = DOMPurify.sanitize(message);
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailPattern.test(email)) {
+      errors.push("Invalid email format.");
+    }
 
-        // Prepare form data for sending
-        let formData = {
-            name: name,
-            email: email,
-            message: message
-        };
+    if (errors.length > 0) {
+      alert(errors.join("\n"));
+      return;
+    }
 
-        // Send form data via Fetch API
-        fetch("contact_handler/contact_form_handler.php", {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json"
-            },
-            body: JSON.stringify(formData)
-        })
-        .then(response => response.json())
-        .then(data => {
-            if (data.success) {
-                alert("Thank you! Your message has been sent successfully.");
-                window.location.href = "index.html"; // Redirect to thank-you page
-            } else {
-                alert("Error: " + data.error);
-            }
-        })
-        .catch(error => {
-            console.error("Error:", error);
-            alert("An error occurred. Please try again later.");
-        });
+    const formData = { name, email, message };
+
+    fetch("php/contact_form_handler.php", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(formData)
+    })
+    .then(response => response.json())
+    .then(data => {
+      if (data.success) {
+        alert("Thank you! Your message has been sent.");
+        window.location.href = "thank_you.html";
+      } else {
+        alert("Error: " + data.error);
+      }
+    })
+    .catch(error => {
+      console.error("Fetch Error:", error);
+      alert("An error occurred. Please try again later.");
     });
+  });
 });
