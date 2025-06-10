@@ -115,7 +115,9 @@
 
   <section id="contact" class="hidden slide-in-right">
     <h1>Contact Me</h1>
-    <form id = "contact-form" action="https://usebasin.com/f/13ed9cef4b40" method="POST">
+    <!-- <form id = "contact-form" action="https://usebasin.com/f/13ed9cef4b40" method="POST"> -->
+    <form id = "contact-form" action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="3e894df6-c58f-4933-abe0-733a734c9c90">
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" required>
         
@@ -124,6 +126,12 @@
         
         <label for="message">Message:</label>
         <textarea id="message" name="message" rows="4" required></textarea>
+
+        <!-- Honeypot Spam Protection -->
+        <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+        <!-- Custom Confirmation / Success Page -->
+        <input type="hidden" name="redirect" value="https://gamelikofijerome.github.io/index.html">
         
         <button type="submit" class="btn">Send Message</button>
     </form>
