@@ -151,8 +151,14 @@ header h1 {
     color: var(--accent-color);
 }
 .timeline p {
-    text-align: justify;
+    text-align: center;
     font-size: 14px;
+    color: var(--accent-color);
+}
+.timeline ul li {
+    text-align: left;
+    font-size: 14px;
+    line-height: 1.5;
     color: #ececec;
 }
 .timeline::after {
@@ -171,7 +177,7 @@ header h1 {
     background: #1e1e1e;
     border-radius: 5px;
     width: 60%;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     box-shadow: 0px 4px 8px rgba(126, 202, 232, 0.898);
 }
 .left {
@@ -197,10 +203,11 @@ header h1 {
 }
 .timeline-date {
     position: absolute;
+    text-wrap: nowrap;
     top: 45px;
-    font-size: 16px;
+    font-size: 18px;
     color: var(--accent-color);
-    border-bottom: 2px solid var(--accent-color);
+    /* border-bottom: 2px solid var(--accent-color); */
 }
 .left .timeline-date {
     right: -160px;
@@ -208,7 +215,7 @@ header h1 {
     width: 100px;
 }
 .right .timeline-date {
-    left: -160px;
+    left: -200px;
     text-align: left;
     width: 100px;
 }
