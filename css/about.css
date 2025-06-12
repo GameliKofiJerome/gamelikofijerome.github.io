@@ -146,12 +146,13 @@ header h1 {
     padding: 10px;
 }
 .timeline h2 {
-    text-align: center;
-    font-size: 20px;
+    text-align: left;
+    font-size: 16px;
     color: var(--accent-color);
 }
 .timeline p {
     text-align: justify;
+    font-size: 14px;
     color: #ececec;
 }
 .timeline::after {
@@ -165,16 +166,16 @@ header h1 {
     margin-left: -10px;
 }
 .timeline-item {
-    padding: 10px 20px;
+    padding: 10px 10px;
     position: relative;
     background: #1e1e1e;
     border-radius: 5px;
-    width: 55%;
+    width: 60%;
     margin-bottom: 30px;
     box-shadow: 0px 4px 8px rgba(126, 202, 232, 0.898);
 }
 .left {
-    left: -18.4%;
+    left: -20.4%;
 }
 .right {
     left: 55%;
@@ -193,6 +194,23 @@ header h1 {
 }
 .right::after {
     left: -48px;
+}
+.timeline-date {
+    position: absolute;
+    top: 45px;
+    font-size: 16px;
+    color: var(--accent-color);
+    border-bottom: 2px solid var(--accent-color);
+}
+.left .timeline-date {
+    right: -160px;
+    text-align: right;
+    width: 100px;
+}
+.right .timeline-date {
+    left: -160px;
+    text-align: left;
+    width: 100px;
 }
 
 /*Page Button Styling*/
@@ -267,3 +285,27 @@ header h1 {
     opacity: 1;
     transform: translateX(0) translateY(0);
 }
+
+ @media screen and (max-width: 768px) {
+            .timeline::after {
+                left: 10px;
+            }
+            .timeline-item {
+                width: 100%;
+                padding-left: 30px;
+                padding-right: 20px;
+                left: 0 !important;
+            }
+            .timeline-item::after {
+                display: none;
+            }
+            .timeline-date {
+                position: relative;
+                text-align: left;
+                width: 100%;
+                left: 0 !important;
+                right: 0 !important;
+                margin-bottom: 10px;
+                display: block;
+            }
+        }
