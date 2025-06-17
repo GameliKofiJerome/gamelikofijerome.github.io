@@ -316,7 +316,7 @@ header h1 {
         margin-bottom: 10px;
         display: block;
         }
-}
+        }
 
 @media screen and (max-width: 480px) {
             h1 {
