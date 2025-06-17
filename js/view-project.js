@@ -690,6 +690,7 @@ document.addEventListener("DOMContentLoaded", function() {
                       <li>Support marketing and service teams with data-driven recommendations to reduce churn</li>
                     </ul>
                     `,
+                    
 
             solution: `
                       <p>The following structured approach was taken to solve the business challenge of identifying and reducing customer churn. 
