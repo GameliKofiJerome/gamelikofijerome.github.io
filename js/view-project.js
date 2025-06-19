@@ -674,7 +674,7 @@ document.addEventListener("DOMContentLoaded", function() {
       "Customer Churn and Prediction Analysis": {
             title: "Customer Churn and Prediction Analysis",
 
-            frameSrc: "https://app.powerbi.com/view?r=15d87674-9761-4b68-ace5-3e13005bdfc0&autoAuth=true&ctid=afab14ca-ab60-42a6-8a29-ff101424f318&navContentPaneEnabled=false&filterPaneEnabled=false",
+            frameSrc: "https://app.powerbi.com/reportEmbed?reportId=15d87674-9761-4b68-ace5-3e13005bdfc0&autoAuth=true&ctid=afab14ca-ab60-42a6-8a29-ff101424f318&navContentPaneEnabled=false&filterPaneEnabled=false",
 
             about: `<p>
                       This project focuses on reducing customer churn in the telecom industry by combining data engineering, business intelligence, and machine learning to deliver a full-scale, data-driven solution. 
