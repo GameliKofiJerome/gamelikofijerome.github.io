@@ -674,7 +674,9 @@ document.addEventListener("DOMContentLoaded", function() {
       "Customer Churn and Prediction Analysis": {
             title: "Customer Churn and Prediction Analysis",
 
-            frameSrc: "https://app.powerbi.com/view?r=eyJrIjoiN2YzMjI1ZWItMTE5Zi00YjFkLWEyZTAtNGRkM2IyMjBhOTZjIiwidCI6ImExMTkyZWZiLTVlODgtNGYxMi1hNzk5LTY0NTdiNTI0MDRjNyJ9&pageName=3a0e83f3db043b96f7ea&navContentPaneEnabled=false&filterPaneEnabled=false",
+            frameSrc: "https://app.powerbi.com/view?r=eyJrIjoiN2YzMjI1ZWItMTE5Zi00YjFkLWEyZTAtNGRkM2IyMjBhOTZjIiwidCI6ImExMTkyZWZiLTVlODgtNGYxMi1hNzk5LTY0NTdiNTI0MDRjNyJ9&pageName=3a0e83f3db043b96f7ea",
+
+            /* frameSrc: "https://app.powerbi.com/view?r=eyJrIjoiN2YzMjI1ZWItMTE5Zi00YjFkLWEyZTAtNGRkM2IyMjBhOTZjIiwidCI6ImExMTkyZWZiLTVlODgtNGYxMi1hNzk5LTY0NTdiNTI0MDRjNyJ9&pageName=3a0e83f3db043b96f7ea&navContentPaneEnabled=false&filterPaneEnabled=false", */
 
             about: `<p>
                       This project focuses on reducing customer churn in the telecom industry by combining data engineering, business intelligence, and machine learning to deliver a full-scale, data-driven solution. 
