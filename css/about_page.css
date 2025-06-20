@@ -213,12 +213,12 @@ header h1 {
     color: var(--accent-color);
 }
 .left .timeline-date {
-    right: -160px;
+    right: -40%;
     text-align: right;
     width: 100px;
 }
 .right .timeline-date {
-    left: -200px;
+    left: -50%;
     text-align: left;
     width: 100px;
 }

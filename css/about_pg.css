@@ -211,7 +211,7 @@ header h1 {
     position: absolute;
     width: 10px;
     height: 10px;
-    right: -48px;
+    /* right: -48px; */
     background-color: var(--accent-color);
     border: 2px solid white;
     top: 50px;
