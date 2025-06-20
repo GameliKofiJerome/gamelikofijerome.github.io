@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function() {
         "Hospitality Domain Revenue Insights": {
             title: "Hospitality Domain Revenue Insights",
 
-            frameSrc: "https://app.powerbi.com/reportEmbed?reportId=ac230e5b-df24-445e-a87c-515f408d1048&autoAuth=true&ctid=afab14ca-ab60-42a6-8a29-ff101424f318&navContentPaneEnabled=false&filterPaneEnabled=false",
+            frameSrc: "https://app.powerbi.com/view?r=eyJrIjoiMTQ2NzZkOWMtNzc3Ni00MjdhLWFlZmEtOTQ4MmI4NWEzYjRkIiwidCI6ImExMTkyZWZiLTVlODgtNGYxMi1hNzk5LTY0NTdiNTI0MDRjNyJ9&pageName=ReportSection",
 
             about: `<p>In today’s competitive hospitality industry, data-driven decision-making is essential for maintaining market leadership and maximizing revenue.<br>
                         This project focuses on a Revenue Insights Dashboard developed in Power BI for Atliq Grands, a luxury hotel chain facing market share and revenue decline.<br>
