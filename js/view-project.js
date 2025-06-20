@@ -91,7 +91,7 @@ document.addEventListener("DOMContentLoaded", function() {
         "Supplier Quality and Performance Analysis": {
             title: "Supplier Quality and Performance Analysis",
 
-            frameSrc: "https://app.powerbi.com/reportEmbed?reportId=98c94ff7-2c6c-401c-bb02-069cb6286ba5&autoAuth=true&ctid=afab14ca-ab60-42a6-8a29-ff101424f318&navContentPaneEnabled=false&filterPaneEnabled=false",
+            frameSrc: "https://app.powerbi.com/view?r=eyJrIjoiODI0ZDZmYWUtNjkyYy00NmMwLTkyMGQtYzYzMGZkMDMwOWJhIiwidCI6ImExMTkyZWZiLTVlODgtNGYxMi1hNzk5LTY0NTdiNTI0MDRjNyJ9&pageName=73628638197ef21ed4c8",
 
             about: `<p>
                       Innova Manufacturing Ltd, a leading manufacturer, faced significant challenges in managing supplier quality and performance due to a lack of a centralized procurement system. 
