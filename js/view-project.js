@@ -270,7 +270,7 @@ document.addEventListener("DOMContentLoaded", function() {
     "Product Sales and Performance Analysis": {
             title: "Product Sales and Performance Analysis",
 
-            frameSrc: "https://app.powerbi.com/reportEmbed?reportId=a9149746-55ad-4e3a-b7e1-35c32c566d18&autoAuth=true&ctid=afab14ca-ab60-42a6-8a29-ff101424f318&navContentPaneEnabled=false&filterPaneEnabled=false",
+            frameSrc: "https://app.powerbi.com/view?r=eyJrIjoiZTA2YzM2YTctN2IwYy00ODNkLThiOTctMGQ2NzNmODNiZDI3IiwidCI6ImExMTkyZWZiLTVlODgtNGYxMi1hNzk5LTY0NTdiNTI0MDRjNyJ9",
 
             about: `<p>
                       The Product Sales and Performance Analysis project aimed to provide actionable insights into sales trends, revenue performance, 
