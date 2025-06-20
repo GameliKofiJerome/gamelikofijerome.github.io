@@ -199,9 +199,13 @@ header h1 {
     top: 50px;
     border-radius: 50%;
     z-index: 1;
+    padding: 0;
+    margin: 0;
 }
 .right::after {
-    left: -11.5%;
+    left: -11%;
+    padding: 0;
+    margin: 0;
 }
 
 .timeline-date {
