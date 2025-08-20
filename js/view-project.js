@@ -421,7 +421,7 @@ document.addEventListener("DOMContentLoaded", function() {
                             The dataset can be found and downloaded using this link on <a href="https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce" target="_blank">Kaggle</a>.</br>
                             The SQL queries for the data processing can be found by clicking <a href="https://github.com/GameliKofiJerome/Olist-E-Commerce-Data-Analysis-Using-SQL-Power-BI/blob/main/olist_data_processing.sql" target="_blank">Here</a>.</br>
                             All SQL queries for undertaking the analysis can be accessed by clicking <a href="https://github.com/GameliKofiJerome/Olist-E-Commerce-Data-Analysis-Using-SQL-Power-BI/blob/main/olist_data_analysis.sql" target="_blank">Here</a>.</br>
-                            The Power BI report can be viewed by clicking on this <a href="https://app.powerbi.com/groups/me/reports/f943c773-3821-4240-8b91-13039244a4f6?ctid=afab14ca-ab60-42a6-8a29-ff101424f318&pbi_source=linkShare" target="_blank">Dashboard Link</a>.
+                            The Power BI report can be viewed by clicking on this <a href="https://app.powerbi.com/links/65PUnmBdjt?ctid=a1192efb-5e88-4f12-a799-6457b52404c7&pbi_source=linkShare" target="_blank">Dashboard Link</a>.
                           </p>
                           `,
 
