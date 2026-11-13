@@ -674,7 +674,9 @@ document.addEventListener("DOMContentLoaded", function() {
       "Customer Churn and Prediction Analysis": {
             title: "Customer Churn and Prediction Analysis",
 
-            frameSrc: "https://app.powerbi.com/view?r=eyJrIjoiN2YzMjI1ZWItMTE5Zi00YjFkLWEyZTAtNGRkM2IyMjBhOTZjIiwidCI6ImExMTkyZWZiLTVlODgtNGYxMi1hNzk5LTY0NTdiNTI0MDRjNyJ9&pageName=3a0e83f3db043b96f7ea",
+            frameSrc: "https://app.powerbi.com/reportEmbed?reportId=86ca9c61-a93c-4e19-b796-2d7ededa737d&autoAuth=true&ctid=6dc661f5-ee0c-460e-bdb4-034aeb3f3670",
+
+            /*frameSrc: "https://app.powerbi.com/view?r=eyJrIjoiN2YzMjI1ZWItMTE5Zi00YjFkLWEyZTAtNGRkM2IyMjBhOTZjIiwidCI6ImExMTkyZWZiLTVlODgtNGYxMi1hNzk5LTY0NTdiNTI0MDRjNyJ9&pageName=3a0e83f3db043b96f7ea",*/
 
             /* frameSrc: "https://app.powerbi.com/view?r=eyJrIjoiN2YzMjI1ZWItMTE5Zi00YjFkLWEyZTAtNGRkM2IyMjBhOTZjIiwidCI6ImExMTkyZWZiLTVlODgtNGYxMi1hNzk5LTY0NTdiNTI0MDRjNyJ9&pageName=3a0e83f3db043b96f7ea&navContentPaneEnabled=false&filterPaneEnabled=false", */
 
