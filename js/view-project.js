@@ -863,7 +863,332 @@ document.addEventListener("DOMContentLoaded", function() {
                         </tbody>
                       </table>
                      `
-        }
+        },
+
+        "Contoso Sales Performance Analysis": {
+            title: "Contoso Sales Performance Analysis",
+
+          // Replace with your authorized Power BI report embed URL.
+        frameSrc: "https://app.powerbi.com/groups/6ae413d3-8223-44b3-86e1-3d8f2be56fbb/reports/4516ceca-c21d-4029-b34f-7a4f037a281c?ctid=6dc661f5-ee0c-460e-bdb4-034aeb3f3670&pbi_source=linkShare",
+
+  about: `
+    <p>
+      This Power BI portfolio project examines
+      <strong>Contoso's retail sales performance from 2011 to 2013</strong>,
+      bringing together commercial indicators across products, stores,
+      geographic markets, sales channels, and promotional activity.
+      The goal was to provide a consolidated view that could support
+      clearer performance monitoring and business decisions.
+    </p>
+
+    <h3>Key Objectives:</h3>
+    <ul>
+      <li>Monitor revenue, sales quantity, profitability, and returns
+      through executive-level indicators.</li>
+      <li>Identify the product categories, brands, stores, locations,
+      and channels contributing most to sales performance.</li>
+      <li>Explore changes in sales-channel mix and the role of
+      promotional discounts.</li>
+      <li>Present findings in accessible Power BI report pages
+      that support management discussions and follow-up analysis.</li>
+    </ul>
+  `,
+
+  solution: `
+    <p>
+      The reporting solution comprises
+      <strong>four coordinated Power BI report pages</strong>,
+      each addressing a different commercial or operational management
+      question. Together, they provide an executive overview and
+      more detailed views of product performance, store operations,
+      and channels and promotions.
+    </p>
+
+    <h3>Power BI Reporting Views:</h3>
+    <ol>
+      <li>
+        <strong>Executive Overview:</strong>
+        Summarizes headline KPIs, revenue trends, channel contribution,
+        product brands, and geographic distribution.
+      </li>
+      <li>
+        <strong>Product Performance:</strong>
+        Compares revenue across categories and product offerings,
+        with rankings and product-level analysis.
+      </li>
+      <li>
+        <strong>Store Performance:</strong>
+        Examines leading stores, regional performance,
+        sales quantities, return rates, and store characteristics.
+      </li>
+      <li>
+        <strong>Channel &amp; Promotion Insights:</strong>
+        Explores the contribution of different sales channels,
+        yearly channel mix, promotional sales, and discount indicators.
+      </li>
+    </ol>
+
+    <h3>Interactive Reporting Features:</h3>
+    <ul>
+      <li>Filters for reporting year, continent or region,
+      and sales channel.</li>
+      <li>Product category, class, and type selections for
+      focused comparisons.</li>
+      <li>Store status and type filters, with Top/Bottom N
+      ranking controls.</li>
+      <li>Revenue/Profit measure-view switching and discount
+      percentage ranges.</li>
+    </ul>
+
+    <p>
+      These features support investigation beyond headline KPIs
+      by allowing users to compare relevant segments and explore
+      potential performance drivers.
+    </p>
+  `,
+
+  dataProcess: `
+    <h3>1. Data Source and Reporting Scope</h3>
+    <p>
+      The project uses <strong>Contoso retail sales data covering
+      2011–2013</strong>. The supplied project materials document
+      sales measures and reporting dimensions including products,
+      brands, stores, geography, channels, sales quantity,
+      returns, discounts, and profitability.
+    </p>
+
+    <p>
+      The available materials are project documentation and
+      exported Power BI report views. They do not establish
+      the original data-file formats or provide a full
+      transaction-level data dictionary.
+    </p>
+
+    <h3>2. Development and Analytical Workflow</h3>
+    <ol type="A">
+      <li>
+        <strong>Define the business questions:</strong>
+        Establish the need to monitor overall performance and
+        investigate product, store, channel, and promotion differences.
+      </li>
+      <li>
+        <strong>Organize the report views:</strong>
+        Structure the analysis into Executive Overview,
+        Product Performance, Store Performance, and
+        Channel &amp; Promotion Insights.
+      </li>
+      <li>
+        <strong>Build management-oriented reporting:</strong>
+        Present revenue, quantity, profitability, returns,
+        trends, maps, rankings, and category comparisons
+        using Power BI visuals.
+      </li>
+      <li>
+        <strong>Enable focused analysis:</strong>
+        Incorporate visible filters, Revenue/Profit switching,
+        and Top/Bottom N selections.
+      </li>
+      <li>
+        <strong>Interpret and communicate results:</strong>
+        Translate the reported measures into key findings,
+        management implications, and recommended follow-up actions.
+      </li>
+    </ol>
+
+    <p>
+      <em>Technical scope:</em> The export shows the final report
+      design and visible interactions. Specific Power Query
+      transformations, DAX formulas, data-model relationships,
+      testing procedures, and deployment arrangements are not
+      documented in the supplied materials.
+    </p>
+  `,
+
+  insights: `
+    <h3>Executive Summary</h3>
+    <p>
+      The report presents <strong>$8.34 billion in revenue</strong>
+      and <strong>36.9 million units sold</strong> over the reported
+      period. The dashboard also displays a
+      <strong>56.2% profit margin KPI</strong>.
+
+      Performance is concentrated in the Store sales channel
+      and two major product categories, highlighting areas for
+      commercial review and potential diversification.
+    </p>
+
+    <h3>Key Findings:</h3>
+
+    <h4>1. Sales Channels: Stores Lead, but the Mix Is Changing</h4>
+    <ul>
+      <li>
+        The <strong>Store channel contributes 58.2%</strong>
+        of reported revenue, while
+        <strong>Online contributes 20.2%</strong>.
+      </li>
+      <li>
+        Store revenue share changes from approximately
+        <strong>63.0% in 2011 to 54.1% in 2013</strong>.
+      </li>
+      <li>
+        This suggests a change in channel composition,
+        rather than proving that any channel's absolute sales grew.
+      </li>
+    </ul>
+
+    <h4>2. Product Performance: Revenue Is Concentrated</h4>
+    <ul>
+      <li>
+        <strong>Computers generated about $3.21 billion</strong>
+        in revenue.
+      </li>
+      <li>
+        <strong>Cameras &amp; Camcorders generated about
+        $2.56 billion</strong>.
+      </li>
+      <li>
+        Together, these categories account for
+        <strong>approximately 69% of reported revenue</strong>,
+        creating both a commercial strength and a concentration
+        to monitor.
+      </li>
+    </ul>
+
+    <h4>3. Store Performance: Benchmark Leading Locations Carefully</h4>
+    <ul>
+      <li>
+        The <strong>Contoso Catalog Store</strong> is the
+        highest-revenue named store in the displayed Top 10 ranking,
+        generating approximately <strong>$0.70 billion</strong>.
+      </li>
+      <li>
+        Store comparisons should also consider store format,
+        staffing, market conditions, sales productivity, and
+        return rates—not revenue alone.
+      </li>
+    </ul>
+
+    <h4>4. Promotions: Assess Commercial Return, Not Only Discount Volume</h4>
+    <ul>
+      <li>
+        The dashboard reports approximately
+        <strong>$126.7 million in discount amount</strong>
+        and a <strong>1.5% average discount</strong>.
+      </li>
+      <li>
+        Promotional activity should be evaluated against
+        incremental sales, contribution margin, and product
+        or channel performance before attributing changes
+        in profitability to discounts.
+      </li>
+    </ul>
+
+    <h3>Business Implications:</h3>
+    <ul>
+      <li>
+        <strong>Channel Strategy:</strong>
+        Evaluate digital and reseller opportunities without
+        overlooking the scale of store-based sales.
+      </li>
+      <li>
+        <strong>Product Strategy:</strong>
+        Examine profitability and inventory productivity
+        in the largest categories before expanding investment.
+      </li>
+      <li>
+        <strong>Store Operations:</strong>
+        Use comparable operational measures to understand
+        performance differences across locations.
+      </li>
+      <li>
+        <strong>Promotion Effectiveness:</strong>
+        Link discounts to commercial outcomes rather than
+        treating promotional sales as evidence of incremental benefit.
+      </li>
+    </ul>
+
+    <p>
+      <em>Figures are rounded values reported or calculated
+      from labels visible in the supplied Power BI dashboards.</em>
+    </p>
+  `,
+
+  recommendations: `
+    <p>
+      The following prioritized recommendations translate
+      the analysis into practical management actions.
+      They are <strong>proposed next steps</strong>,
+      not business outcomes already implemented.
+    </p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Priority</th>
+          <th>Recommended Action</th>
+          <th>Suggested Success Measure</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>1 - High</td>
+          <td>
+            <strong>Align key performance measures:</strong>
+            Reconcile growth calculations, monthly margin measures,
+            product year-on-year comparisons, and promotion
+            definitions before using them for high-stakes decisions.
+          </td>
+          <td>
+            Approved KPI definitions and reconciled reporting results.
+          </td>
+        </tr>
+
+        <tr>
+          <td>2 - High</td>
+          <td>
+            <strong>Evaluate sales-channel economics:</strong>
+            Compare Store, Online, and Reseller channels
+            using costs, returns, and profitability—not
+            revenue share alone.
+          </td>
+          <td>
+            Contribution margin and return rates by channel.
+          </td>
+        </tr>
+
+        <tr>
+          <td>3 - Medium</td>
+          <td>
+            <strong>Review product-category concentration:</strong>
+            Assess category profitability, pricing, demand,
+            and inventory performance before changing
+            product investment priorities.
+          </td>
+          <td>
+            Category profit contribution and inventory productivity.
+          </td>
+        </tr>
+
+        <tr>
+          <td>4 - Medium</td>
+          <td>
+            <strong>Benchmark stores on a comparable basis:</strong>
+            Group locations by store type, staffing, and
+            market characteristics to identify performance gaps
+            and transferable practices.
+          </td>
+          <td>
+            Comparable store productivity, profitability,
+            and return-rate KPIs.
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  `
+}
+
+
         // Add more projects here
     };
     
