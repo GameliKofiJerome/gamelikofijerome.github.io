@@ -871,138 +871,138 @@ document.addEventListener("DOMContentLoaded", function() {
           // Replace with your authorized Power BI report embed URL.
         frameSrc: "https://app.powerbi.com/groups/6ae413d3-8223-44b3-86e1-3d8f2be56fbb/reports/4516ceca-c21d-4029-b34f-7a4f037a281c?ctid=6dc661f5-ee0c-460e-bdb4-034aeb3f3670&pbi_source=linkShare",
 
-  about: `
-    <p>
-      This Power BI portfolio project examines
-      <strong>Contoso's retail sales performance from 2011 to 2013</strong>,
-      bringing together commercial indicators across products, stores,
-      geographic markets, sales channels, and promotional activity.
-      The goal was to provide a consolidated view that could support
-      clearer performance monitoring and business decisions.
-    </p>
+        about: `
+              <p>
+                This Power BI portfolio project examines
+                <strong>Contoso's retail sales performance from 2011 to 2013</strong>,
+                bringing together commercial indicators across products, stores,
+                geographic markets, sales channels, and promotional activity.
+                The goal was to provide a consolidated view that could support
+                clearer performance monitoring and business decisions.
+              </p>
 
-    <h3>Key Objectives:</h3>
-    <ul>
-      <li>Monitor revenue, sales quantity, profitability, and returns
-      through executive-level indicators.</li>
-      <li>Identify the product categories, brands, stores, locations,
-      and channels contributing most to sales performance.</li>
-      <li>Explore changes in sales-channel mix and the role of
-      promotional discounts.</li>
-      <li>Present findings in accessible Power BI report pages
-      that support management discussions and follow-up analysis.</li>
-    </ul>
-  `,
+        <h3>Key Objectives:</h3>
+              <ul>
+                <li>Monitor revenue, sales quantity, profitability, and returns
+                through executive-level indicators.</li>
+                <li>Identify the product categories, brands, stores, locations,
+                and channels contributing most to sales performance.</li>
+                <li>Explore changes in sales-channel mix and the role of
+                promotional discounts.</li>
+                <li>Present findings in accessible Power BI report pages
+                that support management discussions and follow-up analysis.</li>
+              </ul>
+      `,
 
-  solution: `
-    <p>
-      The reporting solution comprises
-      <strong>four coordinated Power BI report pages</strong>,
-      each addressing a different commercial or operational management
-      question. Together, they provide an executive overview and
-      more detailed views of product performance, store operations,
-      and channels and promotions.
-    </p>
+        solution: `
+              <p>
+                The reporting solution comprises
+                <strong>four coordinated Power BI report pages</strong>,
+                each addressing a different commercial or operational management
+                question. Together, they provide an executive overview and
+                more detailed views of product performance, store operations,
+                and channels and promotions.
+              </p>
 
-    <h3>Power BI Reporting Views:</h3>
-    <ol>
-      <li>
-        <strong>Executive Overview:</strong>
-        Summarizes headline KPIs, revenue trends, channel contribution,
-        product brands, and geographic distribution.
-      </li>
-      <li>
-        <strong>Product Performance:</strong>
-        Compares revenue across categories and product offerings,
-        with rankings and product-level analysis.
-      </li>
-      <li>
-        <strong>Store Performance:</strong>
-        Examines leading stores, regional performance,
-        sales quantities, return rates, and store characteristics.
-      </li>
-      <li>
-        <strong>Channel &amp; Promotion Insights:</strong>
-        Explores the contribution of different sales channels,
-        yearly channel mix, promotional sales, and discount indicators.
-      </li>
-    </ol>
+              <h3>Power BI Reporting Views:</h3>
+              <ol>
+                <li>
+                  <strong>Executive Overview:</strong>
+                  Summarizes headline KPIs, revenue trends, channel contribution,
+                  product brands, and geographic distribution.
+                </li>
+                <li>
+                  <strong>Product Performance:</strong>
+                  Compares revenue across categories and product offerings,
+                  with rankings and product-level analysis.
+                </li>
+                <li>
+                  <strong>Store Performance:</strong>
+                  Examines leading stores, regional performance,
+                  sales quantities, return rates, and store characteristics.
+                </li>
+                <li>
+                  <strong>Channel &amp; Promotion Insights:</strong>
+                  Explores the contribution of different sales channels,
+                  yearly channel mix, promotional sales, and discount indicators.
+                </li>
+              </ol>
 
-    <h3>Interactive Reporting Features:</h3>
-    <ul>
-      <li>Filters for reporting year, continent or region,
-      and sales channel.</li>
-      <li>Product category, class, and type selections for
-      focused comparisons.</li>
-      <li>Store status and type filters, with Top/Bottom N
-      ranking controls.</li>
-      <li>Revenue/Profit measure-view switching and discount
-      percentage ranges.</li>
-    </ul>
+              <h3>Interactive Reporting Features:</h3>
+              <ul>
+                <li>Filters for reporting year, continent or region,
+                and sales channel.</li>
+                <li>Product category, class, and type selections for
+                focused comparisons.</li>
+                <li>Store status and type filters, with Top/Bottom N
+                ranking controls.</li>
+                <li>Revenue/Profit measure-view switching and discount
+                percentage ranges.</li>
+              </ul>
 
-    <p>
-      These features support investigation beyond headline KPIs
-      by allowing users to compare relevant segments and explore
-      potential performance drivers.
-    </p>
-  `,
+              <p>
+                These features support investigation beyond headline KPIs
+                by allowing users to compare relevant segments and explore
+                potential performance drivers.
+              </p>
+        `,
 
-  dataProcess: `
-    <h3>1. Data Source and Reporting Scope</h3>
-    <p>
-      The project uses <strong>Contoso retail sales data covering
-      2011–2013</strong>. The supplied project materials document
-      sales measures and reporting dimensions including products,
-      brands, stores, geography, channels, sales quantity,
-      returns, discounts, and profitability.
-    </p>
+      dataProcess: `
+        <h3>1. Data Source and Reporting Scope</h3>
+        <p>
+          The project uses <strong>Contoso retail sales data covering
+          2011–2013</strong>. The supplied project materials document
+          sales measures and reporting dimensions including products,
+          brands, stores, geography, channels, sales quantity,
+          returns, discounts, and profitability.
+        </p>
 
-    <p>
-      The available materials are project documentation and
-      exported Power BI report views. They do not establish
-      the original data-file formats or provide a full
-      transaction-level data dictionary.
-    </p>
+        <p>
+          The available materials are project documentation and
+          exported Power BI report views. They do not establish
+          the original data-file formats or provide a full
+          transaction-level data dictionary.
+        </p>
 
-    <h3>2. Development and Analytical Workflow</h3>
-    <ol type="A">
-      <li>
-        <strong>Define the business questions:</strong>
-        Establish the need to monitor overall performance and
-        investigate product, store, channel, and promotion differences.
-      </li>
-      <li>
-        <strong>Organize the report views:</strong>
-        Structure the analysis into Executive Overview,
-        Product Performance, Store Performance, and
-        Channel &amp; Promotion Insights.
-      </li>
-      <li>
-        <strong>Build management-oriented reporting:</strong>
-        Present revenue, quantity, profitability, returns,
-        trends, maps, rankings, and category comparisons
-        using Power BI visuals.
-      </li>
-      <li>
-        <strong>Enable focused analysis:</strong>
-        Incorporate visible filters, Revenue/Profit switching,
-        and Top/Bottom N selections.
-      </li>
-      <li>
-        <strong>Interpret and communicate results:</strong>
-        Translate the reported measures into key findings,
-        management implications, and recommended follow-up actions.
-      </li>
-    </ol>
+        <h3>2. Development and Analytical Workflow</h3>
+        <ol type="A">
+          <li>
+            <strong>Define the business questions:</strong>
+            Establish the need to monitor overall performance and
+            investigate product, store, channel, and promotion differences.
+          </li>
+          <li>
+            <strong>Organize the report views:</strong>
+            Structure the analysis into Executive Overview,
+            Product Performance, Store Performance, and
+            Channel &amp; Promotion Insights.
+          </li>
+          <li>
+            <strong>Build management-oriented reporting:</strong>
+            Present revenue, quantity, profitability, returns,
+            trends, maps, rankings, and category comparisons
+            using Power BI visuals.
+          </li>
+          <li>
+            <strong>Enable focused analysis:</strong>
+            Incorporate visible filters, Revenue/Profit switching,
+            and Top/Bottom N selections.
+          </li>
+          <li>
+            <strong>Interpret and communicate results:</strong>
+            Translate the reported measures into key findings,
+            management implications, and recommended follow-up actions.
+          </li>
+        </ol>
 
-    <p>
-      <em>Technical scope:</em> The export shows the final report
-      design and visible interactions. Specific Power Query
-      transformations, DAX formulas, data-model relationships,
-      testing procedures, and deployment arrangements are not
-      documented in the supplied materials.
-    </p>
-  `,
+        <p>
+          <em>Technical scope:</em> The export shows the final report
+          design and visible interactions. Specific Power Query
+          transformations, DAX formulas, data-model relationships,
+          testing procedures, and deployment arrangements are not
+          documented in the supplied materials.
+        </p>
+      `,
 
   insights: `
     <h3>Executive Summary</h3>
